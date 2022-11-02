@@ -77,6 +77,25 @@ namespace Calculator_dmg_exe
 
 
 
+        [Browsable(true)]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        [Bindable(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+
+        public override string Text
+        {
+            get
+            {
+                return lblTXT.Text;
+            }
+
+            set
+            {
+                lblTXT.Text = value;
+            }
+        }
+    
+
 
 
 
