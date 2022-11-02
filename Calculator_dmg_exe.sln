@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_dmg_exe", "Calculator_dmg_exe\Calculator_dmg_exe.csproj", "{1E63C6FD-F4C9-4A24-A0AA-702B0DBF9592}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E63C6FD-F4C9-4A24-A0AA-702B0DBF9592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E63C6FD-F4C9-4A24-A0AA-702B0DBF9592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E63C6FD-F4C9-4A24-A0AA-702B0DBF9592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E63C6FD-F4C9-4A24-A0AA-702B0DBF9592}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8EDBF22-91A4-4983-8A2D-7A735B62CFBB}
+	EndGlobalSection
+EndGlobal
