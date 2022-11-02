@@ -77,9 +77,9 @@
             this.flowLayoutPanel1.Controls.Add(this.iosButtons18);
             this.flowLayoutPanel1.Controls.Add(this.iosButtons19);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 127);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 105);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(241, 293);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(241, 296);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -87,7 +87,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(241, 103);
             this.panel1.TabIndex = 1;
@@ -114,7 +114,7 @@
             // 
             // iosButtons1
             // 
-            this.iosButtons1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(94)))), ((int)(((byte)(106)))));
+            this.iosButtons1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(83)))), ((int)(((byte)(91)))));
             this.iosButtons1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons1.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons1.Location = new System.Drawing.Point(0, 0);
@@ -128,7 +128,7 @@
             // 
             // iosButtons2
             // 
-            this.iosButtons2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(94)))), ((int)(((byte)(106)))));
+            this.iosButtons2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(83)))), ((int)(((byte)(91)))));
             this.iosButtons2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons2.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons2.Location = new System.Drawing.Point(60, 0);
@@ -142,7 +142,7 @@
             // 
             // iosButtons3
             // 
-            this.iosButtons3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(94)))), ((int)(((byte)(106)))));
+            this.iosButtons3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(83)))), ((int)(((byte)(91)))));
             this.iosButtons3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons3.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons3.Location = new System.Drawing.Point(120, 0);
@@ -387,7 +387,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 420);
+            this.ClientSize = new System.Drawing.Size(241, 401);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
