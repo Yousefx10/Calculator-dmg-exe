@@ -72,9 +72,10 @@
             this.flowLayoutPanel1.Controls.Add(this.iosButtons17);
             this.flowLayoutPanel1.Controls.Add(this.iosButtons18);
             this.flowLayoutPanel1.Controls.Add(this.iosButtons19);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 65);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 70);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(270, 330);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(280, 330);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // iosButtons1
