@@ -49,10 +49,6 @@ namespace Calculator_dmg_exe
         #endregion
 
 
-
-
-
-
         private void DisplayButtons()
         {
             switch (_direction)
@@ -73,10 +69,7 @@ namespace Calculator_dmg_exe
 
 
 
-
-
-
-
+        //EditButton Content :
         [Browsable(true)]
         [EditorBrowsable(EditorBrowsableState.Always)]
         [Bindable(true)]

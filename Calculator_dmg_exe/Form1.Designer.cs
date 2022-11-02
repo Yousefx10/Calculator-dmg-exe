@@ -86,7 +86,7 @@
             this.iosButtons1.Name = "iosButtons1";
             this.iosButtons1.Size = new System.Drawing.Size(60, 60);
             this.iosButtons1.TabIndex = 0;
-            this.iosButtons1.Text = "0";
+            this.iosButtons1.Text = "AC";
             // 
             // iosButtons2
             // 
@@ -97,7 +97,7 @@
             this.iosButtons2.Name = "iosButtons2";
             this.iosButtons2.Size = new System.Drawing.Size(60, 60);
             this.iosButtons2.TabIndex = 1;
-            this.iosButtons2.Text = "0";
+            this.iosButtons2.Text = "+/-";
             // 
             // iosButtons3
             // 
@@ -108,7 +108,7 @@
             this.iosButtons3.Name = "iosButtons3";
             this.iosButtons3.Size = new System.Drawing.Size(60, 60);
             this.iosButtons3.TabIndex = 2;
-            this.iosButtons3.Text = "1";
+            this.iosButtons3.Text = "%";
             // 
             // iosButtons4
             // 
@@ -120,7 +120,7 @@
             this.iosButtons4.Name = "iosButtons4";
             this.iosButtons4.Size = new System.Drawing.Size(60, 60);
             this.iosButtons4.TabIndex = 3;
-            this.iosButtons4.Text = "0";
+            this.iosButtons4.Text = "÷";
             // 
             // iosButtons5
             // 
@@ -131,7 +131,7 @@
             this.iosButtons5.Name = "iosButtons5";
             this.iosButtons5.Size = new System.Drawing.Size(60, 60);
             this.iosButtons5.TabIndex = 4;
-            this.iosButtons5.Text = "0";
+            this.iosButtons5.Text = "7";
             // 
             // iosButtons6
             // 
@@ -142,7 +142,7 @@
             this.iosButtons6.Name = "iosButtons6";
             this.iosButtons6.Size = new System.Drawing.Size(60, 60);
             this.iosButtons6.TabIndex = 5;
-            this.iosButtons6.Text = "0";
+            this.iosButtons6.Text = "8";
             // 
             // iosButtons7
             // 
@@ -153,7 +153,7 @@
             this.iosButtons7.Name = "iosButtons7";
             this.iosButtons7.Size = new System.Drawing.Size(60, 60);
             this.iosButtons7.TabIndex = 6;
-            this.iosButtons7.Text = "0";
+            this.iosButtons7.Text = "9";
             // 
             // iosButtons8
             // 
@@ -165,7 +165,7 @@
             this.iosButtons8.Name = "iosButtons8";
             this.iosButtons8.Size = new System.Drawing.Size(60, 60);
             this.iosButtons8.TabIndex = 7;
-            this.iosButtons8.Text = "0";
+            this.iosButtons8.Text = "X";
             // 
             // iosButtons9
             // 
@@ -176,7 +176,7 @@
             this.iosButtons9.Name = "iosButtons9";
             this.iosButtons9.Size = new System.Drawing.Size(60, 60);
             this.iosButtons9.TabIndex = 8;
-            this.iosButtons9.Text = "0";
+            this.iosButtons9.Text = "4";
             // 
             // iosButtons10
             // 
@@ -187,7 +187,7 @@
             this.iosButtons10.Name = "iosButtons10";
             this.iosButtons10.Size = new System.Drawing.Size(60, 60);
             this.iosButtons10.TabIndex = 9;
-            this.iosButtons10.Text = "0";
+            this.iosButtons10.Text = "5";
             // 
             // iosButtons11
             // 
@@ -198,7 +198,7 @@
             this.iosButtons11.Name = "iosButtons11";
             this.iosButtons11.Size = new System.Drawing.Size(60, 60);
             this.iosButtons11.TabIndex = 10;
-            this.iosButtons11.Text = "0";
+            this.iosButtons11.Text = "6";
             // 
             // iosButtons12
             // 
@@ -210,7 +210,7 @@
             this.iosButtons12.Name = "iosButtons12";
             this.iosButtons12.Size = new System.Drawing.Size(60, 60);
             this.iosButtons12.TabIndex = 11;
-            this.iosButtons12.Text = "0";
+            this.iosButtons12.Text = "-";
             // 
             // iosButtons13
             // 
@@ -221,7 +221,7 @@
             this.iosButtons13.Name = "iosButtons13";
             this.iosButtons13.Size = new System.Drawing.Size(60, 60);
             this.iosButtons13.TabIndex = 12;
-            this.iosButtons13.Text = "0";
+            this.iosButtons13.Text = "1";
             // 
             // iosButtons14
             // 
@@ -232,7 +232,7 @@
             this.iosButtons14.Name = "iosButtons14";
             this.iosButtons14.Size = new System.Drawing.Size(60, 60);
             this.iosButtons14.TabIndex = 13;
-            this.iosButtons14.Text = "0";
+            this.iosButtons14.Text = "2";
             // 
             // iosButtons15
             // 
@@ -243,7 +243,7 @@
             this.iosButtons15.Name = "iosButtons15";
             this.iosButtons15.Size = new System.Drawing.Size(60, 60);
             this.iosButtons15.TabIndex = 14;
-            this.iosButtons15.Text = "0";
+            this.iosButtons15.Text = "3";
             // 
             // iosButtons16
             // 
@@ -255,7 +255,7 @@
             this.iosButtons16.Name = "iosButtons16";
             this.iosButtons16.Size = new System.Drawing.Size(60, 60);
             this.iosButtons16.TabIndex = 15;
-            this.iosButtons16.Text = "0";
+            this.iosButtons16.Text = "+";
             // 
             // iosButtons17
             // 
@@ -289,7 +289,7 @@
             this.iosButtons19.Name = "iosButtons19";
             this.iosButtons19.Size = new System.Drawing.Size(60, 60);
             this.iosButtons19.TabIndex = 18;
-            this.iosButtons19.Text = "0";
+            this.iosButtons19.Text = "=";
             // 
             // CalculatorForm
             // 
