@@ -58,6 +58,12 @@
     <Compile Include="iosButtons.Designer.cs">
       <DependentUpon>iosButtons.cs</DependentUpon>
     </Compile>
+    <Compile Include="navButtons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="navButtons.Designer.cs">
+      <DependentUpon>navButtons.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CalculatorForm.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="iosButtons.resx">
       <DependentUpon>iosButtons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="navButtons.resx">
+      <DependentUpon>navButtons.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,8 +98,24 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\G1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Y1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Y2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
