@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator_dmg_exe.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,20 @@ namespace Calculator_dmg_exe
         public navButtons()
         {
             InitializeComponent();
+        }
+
+        private void ico_red_MouseEnter(object sender, EventArgs e)
+        {
+            ico_red.Image       = Resources.R2;
+            ico_yellow.Image    = Resources.Y2;
+            ico_green.Image     = Resources.G2;
+        }
+
+        private void ico_red_MouseLeave(object sender, EventArgs e)
+        {
+            ico_red.Image       = Resources.R1;
+            ico_yellow.Image    = Resources.Y1;
+            ico_green.Image     = Resources.G1;
         }
     }
 }

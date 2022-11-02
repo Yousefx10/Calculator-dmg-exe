@@ -28,56 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.ico_red = new System.Windows.Forms.PictureBox();
+            this.ico_yellow = new System.Windows.Forms.PictureBox();
+            this.ico_green = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ico_red)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ico_yellow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ico_green)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // ico_red
             // 
-            this.pictureBox1.Image = global::Calculator_dmg_exe.Properties.Resources.R1;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(12, 12);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.ico_red.Image = global::Calculator_dmg_exe.Properties.Resources.R1;
+            this.ico_red.Location = new System.Drawing.Point(3, 3);
+            this.ico_red.Name = "ico_red";
+            this.ico_red.Size = new System.Drawing.Size(12, 12);
+            this.ico_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ico_red.TabIndex = 0;
+            this.ico_red.TabStop = false;
+            this.ico_red.MouseEnter += new System.EventHandler(this.ico_red_MouseEnter);
+            this.ico_red.MouseLeave += new System.EventHandler(this.ico_red_MouseLeave);
             // 
-            // pictureBox2
+            // ico_yellow
             // 
-            this.pictureBox2.Image = global::Calculator_dmg_exe.Properties.Resources.Y1;
-            this.pictureBox2.Location = new System.Drawing.Point(22, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(12, 12);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.ico_yellow.Image = global::Calculator_dmg_exe.Properties.Resources.Y1;
+            this.ico_yellow.Location = new System.Drawing.Point(22, 3);
+            this.ico_yellow.Name = "ico_yellow";
+            this.ico_yellow.Size = new System.Drawing.Size(12, 12);
+            this.ico_yellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ico_yellow.TabIndex = 1;
+            this.ico_yellow.TabStop = false;
+            this.ico_yellow.MouseEnter += new System.EventHandler(this.ico_red_MouseEnter);
+            this.ico_yellow.MouseLeave += new System.EventHandler(this.ico_red_MouseLeave);
             // 
-            // pictureBox3
+            // ico_green
             // 
-            this.pictureBox3.Image = global::Calculator_dmg_exe.Properties.Resources.G1;
-            this.pictureBox3.Location = new System.Drawing.Point(41, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(12, 12);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.ico_green.Image = global::Calculator_dmg_exe.Properties.Resources.G1;
+            this.ico_green.Location = new System.Drawing.Point(41, 3);
+            this.ico_green.Name = "ico_green";
+            this.ico_green.Size = new System.Drawing.Size(12, 12);
+            this.ico_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ico_green.TabIndex = 2;
+            this.ico_green.TabStop = false;
+            this.ico_green.MouseEnter += new System.EventHandler(this.ico_red_MouseEnter);
+            this.ico_green.MouseLeave += new System.EventHandler(this.ico_red_MouseLeave);
             // 
             // navButtons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ico_green);
+            this.Controls.Add(this.ico_yellow);
+            this.Controls.Add(this.ico_red);
             this.Name = "navButtons";
             this.Size = new System.Drawing.Size(62, 21);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ico_red)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ico_yellow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ico_green)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,8 +91,8 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox ico_red;
+        private System.Windows.Forms.PictureBox ico_yellow;
+        private System.Windows.Forms.PictureBox ico_green;
     }
 }
