@@ -28,7 +28,7 @@ namespace Calculator_dmg_exe
         public CalculatorForm()
         {
             InitializeComponent();
-            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
         }
     }
 }

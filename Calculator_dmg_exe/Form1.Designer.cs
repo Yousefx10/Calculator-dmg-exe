@@ -73,9 +73,9 @@
             this.flowLayoutPanel1.Controls.Add(this.iosButtons18);
             this.flowLayoutPanel1.Controls.Add(this.iosButtons19);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 70);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 90);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(280, 330);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(266, 330);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // iosButtons1
@@ -315,7 +315,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(280, 400);
+            this.ClientSize = new System.Drawing.Size(266, 420);
             this.ControlBox = false;
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
