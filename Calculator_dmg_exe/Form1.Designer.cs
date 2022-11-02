@@ -31,6 +31,7 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.iosButtons1 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons2 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons3 = new Calculator_dmg_exe.iosButtons();
@@ -50,7 +51,6 @@
             this.iosButtons17 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons18 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons19 = new Calculator_dmg_exe.iosButtons();
-            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -101,6 +101,17 @@
             this.panel2.Size = new System.Drawing.Size(250, 26);
             this.panel2.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(199, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "0";
+            // 
             // iosButtons1
             // 
             this.iosButtons1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -142,6 +153,7 @@
             // 
             // iosButtons4
             // 
+            this.iosButtons4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
             this.iosButtons4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons4.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons4, true);
@@ -195,6 +207,7 @@
             // 
             // iosButtons8
             // 
+            this.iosButtons8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
             this.iosButtons8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons8.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons8, true);
@@ -248,6 +261,7 @@
             // 
             // iosButtons12
             // 
+            this.iosButtons12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
             this.iosButtons12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons12.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons12, true);
@@ -301,6 +315,7 @@
             // 
             // iosButtons16
             // 
+            this.iosButtons16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
             this.iosButtons16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons16.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons16, true);
@@ -341,6 +356,7 @@
             // 
             // iosButtons19
             // 
+            this.iosButtons19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
             this.iosButtons19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons19.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons19, true);
@@ -352,17 +368,6 @@
             this.iosButtons19.TabIndex = 18;
             this.iosButtons19.Text = "=";
             this.iosButtons19.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(199, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "0";
             // 
             // CalculatorForm
             // 
