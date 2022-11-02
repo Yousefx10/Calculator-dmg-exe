@@ -152,7 +152,7 @@
             this.iosButtons3.Size = new System.Drawing.Size(60, 60);
             this.iosButtons3.TabIndex = 2;
             this.iosButtons3.Text = "%";
-            this.iosButtons3.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
+            this.iosButtons3.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Left;
             // 
             // iosButtons4
             // 
@@ -223,7 +223,7 @@
             this.iosButtons8.Name = "iosButtons8";
             this.iosButtons8.Size = new System.Drawing.Size(60, 60);
             this.iosButtons8.TabIndex = 7;
-            this.iosButtons8.Text = "X";
+            this.iosButtons8.Text = "x";
             this.iosButtons8.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons9
@@ -280,7 +280,7 @@
             this.iosButtons12.Name = "iosButtons12";
             this.iosButtons12.Size = new System.Drawing.Size(60, 60);
             this.iosButtons12.TabIndex = 11;
-            this.iosButtons12.Text = "-";
+            this.iosButtons12.Text = "—";
             this.iosButtons12.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons13
@@ -365,7 +365,7 @@
             this.iosButtons18.Name = "iosButtons18";
             this.iosButtons18.Size = new System.Drawing.Size(60, 60);
             this.iosButtons18.TabIndex = 17;
-            this.iosButtons18.Text = ",";
+            this.iosButtons18.Text = "•";
             this.iosButtons18.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons19
