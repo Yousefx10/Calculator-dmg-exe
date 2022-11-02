@@ -48,6 +48,7 @@
             this.iosButtons17 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons18 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons19 = new Calculator_dmg_exe.iosButtons();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -330,12 +331,21 @@
             this.iosButtons19.Text = "=";
             this.iosButtons19.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 12);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(250, 98);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(250, 420);
             this.ControlBox = false;
+            this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -369,6 +379,7 @@
         private iosButtons iosButtons17;
         private iosButtons iosButtons18;
         private iosButtons iosButtons19;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }
 
