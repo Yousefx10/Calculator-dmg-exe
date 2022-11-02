@@ -342,7 +342,7 @@
             this.iosButtons17.Size = new System.Drawing.Size(120, 60);
             this.iosButtons17.TabIndex = 16;
             this.iosButtons17.Text = "0";
-            this.iosButtons17.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
+            this.iosButtons17.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Center;
             // 
             // iosButtons18
             // 

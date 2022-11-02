@@ -93,7 +93,8 @@ namespace Calculator_dmg_exe
         public enum TextAlignSize
         {
             Normal,
-            Left
+            Left,
+            Center
         }
         #region Collapse TextSizeAlign
 
@@ -134,6 +135,10 @@ namespace Calculator_dmg_exe
 
                 case TextAlignSize.Left:
                     lblTXT.Location = new Point(9, lblTXT.Location.Y);
+                    break;
+
+                case TextAlignSize.Center:
+                    lblTXT.Location = new Point(46, lblTXT.Location.Y);
                     break;
 
             }
