@@ -31,6 +31,7 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.navButtons1 = new Calculator_dmg_exe.navButtons();
             this.iosButtons1 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons2 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons3 = new Calculator_dmg_exe.iosButtons();
@@ -50,7 +51,6 @@
             this.iosButtons17 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons18 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons19 = new Calculator_dmg_exe.iosButtons();
-            this.navButtons1 = new Calculator_dmg_exe.navButtons();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -77,7 +77,7 @@
             this.flowLayoutPanel1.Controls.Add(this.iosButtons18);
             this.flowLayoutPanel1.Controls.Add(this.iosButtons19);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 105);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 93);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(241, 296);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -90,7 +90,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(241, 105);
+            this.panel1.Size = new System.Drawing.Size(241, 93);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -103,6 +103,13 @@
             this.label1.Size = new System.Drawing.Size(39, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "0";
+            // 
+            // navButtons1
+            // 
+            this.navButtons1.Location = new System.Drawing.Point(8, 5);
+            this.navButtons1.Name = "navButtons1";
+            this.navButtons1.Size = new System.Drawing.Size(75, 23);
+            this.navButtons1.TabIndex = 1;
             // 
             // iosButtons1
             // 
@@ -375,18 +382,11 @@
             this.iosButtons19.Text = "=";
             this.iosButtons19.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
-            // navButtons1
-            // 
-            this.navButtons1.Location = new System.Drawing.Point(8, 5);
-            this.navButtons1.Name = "navButtons1";
-            this.navButtons1.Size = new System.Drawing.Size(75, 23);
-            this.navButtons1.TabIndex = 1;
-            // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 401);
+            this.ClientSize = new System.Drawing.Size(241, 389);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
