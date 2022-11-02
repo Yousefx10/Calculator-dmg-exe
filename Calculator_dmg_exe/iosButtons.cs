@@ -65,7 +65,8 @@ namespace Calculator_dmg_exe
                     break;
 
                 case CollapseDirection.Wide:
-
+                    //sum of two buttons size
+                    this.Size = new Size(126,Height);
                     break;
             }
         }

@@ -47,9 +47,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lblTXT);
-            this.MinimumSize = new System.Drawing.Size(60, 60);
             this.Name = "iosButtons";
-            this.Size = new System.Drawing.Size(58, 58);
+            this.Size = new System.Drawing.Size(60, 60);
             this.ResumeLayout(false);
             this.PerformLayout();
 

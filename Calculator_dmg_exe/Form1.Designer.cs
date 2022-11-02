@@ -48,7 +48,6 @@
             this.iosButtons17 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons18 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons19 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons20 = new Calculator_dmg_exe.iosButtons();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +72,6 @@
             this.flowLayoutPanel1.Controls.Add(this.iosButtons17);
             this.flowLayoutPanel1.Controls.Add(this.iosButtons18);
             this.flowLayoutPanel1.Controls.Add(this.iosButtons19);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons20);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 65);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(270, 330);
@@ -81,6 +79,7 @@
             // 
             // iosButtons1
             // 
+            this.iosButtons1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons1.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons1.Location = new System.Drawing.Point(3, 3);
             this.iosButtons1.MinimumSize = new System.Drawing.Size(60, 60);
@@ -90,6 +89,7 @@
             // 
             // iosButtons2
             // 
+            this.iosButtons2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons2.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons2.Location = new System.Drawing.Point(69, 3);
             this.iosButtons2.MinimumSize = new System.Drawing.Size(60, 60);
@@ -99,6 +99,7 @@
             // 
             // iosButtons3
             // 
+            this.iosButtons3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons3.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons3.Location = new System.Drawing.Point(135, 3);
             this.iosButtons3.MinimumSize = new System.Drawing.Size(60, 60);
@@ -108,6 +109,7 @@
             // 
             // iosButtons4
             // 
+            this.iosButtons4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons4.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons4, true);
             this.iosButtons4.Location = new System.Drawing.Point(201, 3);
@@ -118,6 +120,7 @@
             // 
             // iosButtons5
             // 
+            this.iosButtons5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons5.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons5.Location = new System.Drawing.Point(3, 69);
             this.iosButtons5.MinimumSize = new System.Drawing.Size(60, 60);
@@ -127,6 +130,7 @@
             // 
             // iosButtons6
             // 
+            this.iosButtons6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons6.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons6.Location = new System.Drawing.Point(69, 69);
             this.iosButtons6.MinimumSize = new System.Drawing.Size(60, 60);
@@ -136,6 +140,7 @@
             // 
             // iosButtons7
             // 
+            this.iosButtons7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons7.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons7.Location = new System.Drawing.Point(135, 69);
             this.iosButtons7.MinimumSize = new System.Drawing.Size(60, 60);
@@ -145,6 +150,7 @@
             // 
             // iosButtons8
             // 
+            this.iosButtons8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons8.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons8, true);
             this.iosButtons8.Location = new System.Drawing.Point(201, 69);
@@ -155,6 +161,7 @@
             // 
             // iosButtons9
             // 
+            this.iosButtons9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons9.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons9.Location = new System.Drawing.Point(3, 135);
             this.iosButtons9.MinimumSize = new System.Drawing.Size(60, 60);
@@ -164,6 +171,7 @@
             // 
             // iosButtons10
             // 
+            this.iosButtons10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons10.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons10.Location = new System.Drawing.Point(69, 135);
             this.iosButtons10.MinimumSize = new System.Drawing.Size(60, 60);
@@ -173,6 +181,7 @@
             // 
             // iosButtons11
             // 
+            this.iosButtons11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons11.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons11.Location = new System.Drawing.Point(135, 135);
             this.iosButtons11.MinimumSize = new System.Drawing.Size(60, 60);
@@ -182,6 +191,7 @@
             // 
             // iosButtons12
             // 
+            this.iosButtons12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons12.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons12, true);
             this.iosButtons12.Location = new System.Drawing.Point(201, 135);
@@ -192,6 +202,7 @@
             // 
             // iosButtons13
             // 
+            this.iosButtons13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons13.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons13.Location = new System.Drawing.Point(3, 201);
             this.iosButtons13.MinimumSize = new System.Drawing.Size(60, 60);
@@ -201,6 +212,7 @@
             // 
             // iosButtons14
             // 
+            this.iosButtons14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons14.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons14.Location = new System.Drawing.Point(69, 201);
             this.iosButtons14.MinimumSize = new System.Drawing.Size(60, 60);
@@ -210,6 +222,7 @@
             // 
             // iosButtons15
             // 
+            this.iosButtons15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons15.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.iosButtons15.Location = new System.Drawing.Point(135, 201);
             this.iosButtons15.MinimumSize = new System.Drawing.Size(60, 60);
@@ -219,6 +232,7 @@
             // 
             // iosButtons16
             // 
+            this.iosButtons16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons16.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons16, true);
             this.iosButtons16.Location = new System.Drawing.Point(201, 201);
@@ -229,17 +243,19 @@
             // 
             // iosButtons17
             // 
-            this.iosButtons17.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.iosButtons17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.iosButtons17.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Wide;
             this.iosButtons17.Location = new System.Drawing.Point(3, 267);
             this.iosButtons17.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons17.Name = "iosButtons17";
-            this.iosButtons17.Size = new System.Drawing.Size(60, 60);
+            this.iosButtons17.Size = new System.Drawing.Size(126, 60);
             this.iosButtons17.TabIndex = 16;
             // 
             // iosButtons18
             // 
+            this.iosButtons18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons18.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons18.Location = new System.Drawing.Point(69, 267);
+            this.iosButtons18.Location = new System.Drawing.Point(135, 267);
             this.iosButtons18.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons18.Name = "iosButtons18";
             this.iosButtons18.Size = new System.Drawing.Size(60, 60);
@@ -247,22 +263,14 @@
             // 
             // iosButtons19
             // 
+            this.iosButtons19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons19.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons19.Location = new System.Drawing.Point(135, 267);
+            this.flowLayoutPanel1.SetFlowBreak(this.iosButtons19, true);
+            this.iosButtons19.Location = new System.Drawing.Point(201, 267);
             this.iosButtons19.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons19.Name = "iosButtons19";
             this.iosButtons19.Size = new System.Drawing.Size(60, 60);
             this.iosButtons19.TabIndex = 18;
-            // 
-            // iosButtons20
-            // 
-            this.iosButtons20.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.flowLayoutPanel1.SetFlowBreak(this.iosButtons20, true);
-            this.iosButtons20.Location = new System.Drawing.Point(201, 267);
-            this.iosButtons20.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons20.Name = "iosButtons20";
-            this.iosButtons20.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons20.TabIndex = 19;
             // 
             // CalculatorForm
             // 
@@ -303,7 +311,6 @@
         private iosButtons iosButtons17;
         private iosButtons iosButtons18;
         private iosButtons iosButtons19;
-        private iosButtons iosButtons20;
     }
 }
 
