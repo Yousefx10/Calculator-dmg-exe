@@ -30,8 +30,8 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.iosButtons1 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons2 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons3 = new Calculator_dmg_exe.iosButtons();
@@ -77,9 +77,9 @@
             this.flowLayoutPanel1.Controls.Add(this.iosButtons18);
             this.flowLayoutPanel1.Controls.Add(this.iosButtons19);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 110);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 127);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 310);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(241, 293);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -87,10 +87,21 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 26);
+            this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 84);
+            this.panel1.Size = new System.Drawing.Size(241, 103);
             this.panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(199, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "0";
             // 
             // panel2
             // 
@@ -98,27 +109,16 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 26);
+            this.panel2.Size = new System.Drawing.Size(241, 26);
             this.panel2.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(199, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "0";
             // 
             // iosButtons1
             // 
             this.iosButtons1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(94)))), ((int)(((byte)(106)))));
             this.iosButtons1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons1.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons1.Location = new System.Drawing.Point(1, 1);
-            this.iosButtons1.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons1.Location = new System.Drawing.Point(0, 0);
+            this.iosButtons1.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons1.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons1.Name = "iosButtons1";
             this.iosButtons1.Size = new System.Drawing.Size(60, 60);
@@ -131,8 +131,8 @@
             this.iosButtons2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(94)))), ((int)(((byte)(106)))));
             this.iosButtons2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons2.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons2.Location = new System.Drawing.Point(63, 1);
-            this.iosButtons2.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons2.Location = new System.Drawing.Point(60, 0);
+            this.iosButtons2.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons2.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons2.Name = "iosButtons2";
             this.iosButtons2.Size = new System.Drawing.Size(60, 60);
@@ -145,8 +145,8 @@
             this.iosButtons3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(94)))), ((int)(((byte)(106)))));
             this.iosButtons3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons3.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons3.Location = new System.Drawing.Point(125, 1);
-            this.iosButtons3.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons3.Location = new System.Drawing.Point(120, 0);
+            this.iosButtons3.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons3.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons3.Name = "iosButtons3";
             this.iosButtons3.Size = new System.Drawing.Size(60, 60);
@@ -160,8 +160,8 @@
             this.iosButtons4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons4.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons4, true);
-            this.iosButtons4.Location = new System.Drawing.Point(187, 1);
-            this.iosButtons4.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons4.Location = new System.Drawing.Point(180, 0);
+            this.iosButtons4.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons4.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons4.Name = "iosButtons4";
             this.iosButtons4.Size = new System.Drawing.Size(60, 60);
@@ -174,8 +174,8 @@
             this.iosButtons5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.iosButtons5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons5.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons5.Location = new System.Drawing.Point(1, 63);
-            this.iosButtons5.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons5.Location = new System.Drawing.Point(0, 60);
+            this.iosButtons5.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons5.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons5.Name = "iosButtons5";
             this.iosButtons5.Size = new System.Drawing.Size(60, 60);
@@ -188,8 +188,8 @@
             this.iosButtons6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.iosButtons6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons6.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons6.Location = new System.Drawing.Point(63, 63);
-            this.iosButtons6.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons6.Location = new System.Drawing.Point(60, 60);
+            this.iosButtons6.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons6.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons6.Name = "iosButtons6";
             this.iosButtons6.Size = new System.Drawing.Size(60, 60);
@@ -202,8 +202,8 @@
             this.iosButtons7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.iosButtons7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons7.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons7.Location = new System.Drawing.Point(125, 63);
-            this.iosButtons7.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons7.Location = new System.Drawing.Point(120, 60);
+            this.iosButtons7.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons7.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons7.Name = "iosButtons7";
             this.iosButtons7.Size = new System.Drawing.Size(60, 60);
@@ -217,8 +217,8 @@
             this.iosButtons8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons8.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons8, true);
-            this.iosButtons8.Location = new System.Drawing.Point(187, 63);
-            this.iosButtons8.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons8.Location = new System.Drawing.Point(180, 60);
+            this.iosButtons8.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons8.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons8.Name = "iosButtons8";
             this.iosButtons8.Size = new System.Drawing.Size(60, 60);
@@ -231,8 +231,8 @@
             this.iosButtons9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.iosButtons9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons9.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons9.Location = new System.Drawing.Point(1, 125);
-            this.iosButtons9.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons9.Location = new System.Drawing.Point(0, 120);
+            this.iosButtons9.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons9.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons9.Name = "iosButtons9";
             this.iosButtons9.Size = new System.Drawing.Size(60, 60);
@@ -245,8 +245,8 @@
             this.iosButtons10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.iosButtons10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons10.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons10.Location = new System.Drawing.Point(63, 125);
-            this.iosButtons10.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons10.Location = new System.Drawing.Point(60, 120);
+            this.iosButtons10.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons10.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons10.Name = "iosButtons10";
             this.iosButtons10.Size = new System.Drawing.Size(60, 60);
@@ -259,8 +259,8 @@
             this.iosButtons11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.iosButtons11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons11.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons11.Location = new System.Drawing.Point(125, 125);
-            this.iosButtons11.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons11.Location = new System.Drawing.Point(120, 120);
+            this.iosButtons11.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons11.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons11.Name = "iosButtons11";
             this.iosButtons11.Size = new System.Drawing.Size(60, 60);
@@ -274,8 +274,8 @@
             this.iosButtons12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons12.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons12, true);
-            this.iosButtons12.Location = new System.Drawing.Point(187, 125);
-            this.iosButtons12.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons12.Location = new System.Drawing.Point(180, 120);
+            this.iosButtons12.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons12.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons12.Name = "iosButtons12";
             this.iosButtons12.Size = new System.Drawing.Size(60, 60);
@@ -288,8 +288,8 @@
             this.iosButtons13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.iosButtons13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons13.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons13.Location = new System.Drawing.Point(1, 187);
-            this.iosButtons13.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons13.Location = new System.Drawing.Point(0, 180);
+            this.iosButtons13.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons13.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons13.Name = "iosButtons13";
             this.iosButtons13.Size = new System.Drawing.Size(60, 60);
@@ -302,8 +302,8 @@
             this.iosButtons14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.iosButtons14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons14.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons14.Location = new System.Drawing.Point(63, 187);
-            this.iosButtons14.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons14.Location = new System.Drawing.Point(60, 180);
+            this.iosButtons14.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons14.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons14.Name = "iosButtons14";
             this.iosButtons14.Size = new System.Drawing.Size(60, 60);
@@ -316,8 +316,8 @@
             this.iosButtons15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.iosButtons15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons15.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons15.Location = new System.Drawing.Point(125, 187);
-            this.iosButtons15.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons15.Location = new System.Drawing.Point(120, 180);
+            this.iosButtons15.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons15.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons15.Name = "iosButtons15";
             this.iosButtons15.Size = new System.Drawing.Size(60, 60);
@@ -331,8 +331,8 @@
             this.iosButtons16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons16.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons16, true);
-            this.iosButtons16.Location = new System.Drawing.Point(187, 187);
-            this.iosButtons16.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons16.Location = new System.Drawing.Point(180, 180);
+            this.iosButtons16.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons16.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons16.Name = "iosButtons16";
             this.iosButtons16.Size = new System.Drawing.Size(60, 60);
@@ -345,11 +345,11 @@
             this.iosButtons17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.iosButtons17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons17.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Wide;
-            this.iosButtons17.Location = new System.Drawing.Point(1, 249);
-            this.iosButtons17.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons17.Location = new System.Drawing.Point(0, 240);
+            this.iosButtons17.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons17.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons17.Name = "iosButtons17";
-            this.iosButtons17.Size = new System.Drawing.Size(122, 60);
+            this.iosButtons17.Size = new System.Drawing.Size(120, 60);
             this.iosButtons17.TabIndex = 16;
             this.iosButtons17.Text = "0";
             this.iosButtons17.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
@@ -359,8 +359,8 @@
             this.iosButtons18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.iosButtons18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons18.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons18.Location = new System.Drawing.Point(125, 249);
-            this.iosButtons18.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons18.Location = new System.Drawing.Point(120, 240);
+            this.iosButtons18.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons18.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons18.Name = "iosButtons18";
             this.iosButtons18.Size = new System.Drawing.Size(60, 60);
@@ -374,8 +374,8 @@
             this.iosButtons19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.iosButtons19.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
             this.flowLayoutPanel1.SetFlowBreak(this.iosButtons19, true);
-            this.iosButtons19.Location = new System.Drawing.Point(187, 249);
-            this.iosButtons19.Margin = new System.Windows.Forms.Padding(1);
+            this.iosButtons19.Location = new System.Drawing.Point(180, 240);
+            this.iosButtons19.Margin = new System.Windows.Forms.Padding(0);
             this.iosButtons19.MinimumSize = new System.Drawing.Size(60, 60);
             this.iosButtons19.Name = "iosButtons19";
             this.iosButtons19.Size = new System.Drawing.Size(60, 60);
@@ -387,7 +387,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(250, 420);
+            this.ClientSize = new System.Drawing.Size(241, 420);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
