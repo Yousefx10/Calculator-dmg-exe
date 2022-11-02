@@ -87,9 +87,57 @@ namespace Calculator_dmg_exe
                 lblTXT.Text = value;
             }
         }
-    
 
 
+
+        public enum TextAlignSize
+        {
+            Normal,
+            Left
+        }
+        #region Collapse TextSizeAlign
+
+        [Browsable(true), DefaultValue("Normal"), Description("Text center or left")]
+        [ListBindable(true), Editor(typeof(ComboBox), typeof(UITypeEditor))]
+        public TextAlignSize _textsize = TextAlignSize.Normal;
+        public TextAlignSize TextSizeAlign
+        {
+            get { return _textsize; }
+            set
+            {
+                _textsize = value;
+                CalltextPlace();
+            }
+        }
+
+
+        public event Action textplace;
+        protected void CalltextPlace()
+        {
+            Action handler = textplace;
+            changeTextPlace();
+            if (handler != null)
+            {
+                handler();
+            }
+        }
+        #endregion
+
+
+        private void changeTextPlace()
+        {
+            switch (_textsize)
+            {
+                case TextAlignSize.Normal:
+                    lblTXT.Location = new Point(17, 16);
+                    break;
+
+                case TextAlignSize.Left:
+                    lblTXT.Location = new Point(9, lblTXT.Location.Y);
+                    break;
+
+            }
+        }
 
 
 

@@ -34,10 +34,10 @@
             // lblTXT
             // 
             this.lblTXT.AutoSize = true;
-            this.lblTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTXT.Location = new System.Drawing.Point(18, 18);
+            this.lblTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTXT.Location = new System.Drawing.Point(17, 16);
             this.lblTXT.Name = "lblTXT";
-            this.lblTXT.Size = new System.Drawing.Size(24, 25);
+            this.lblTXT.Size = new System.Drawing.Size(26, 29);
             this.lblTXT.TabIndex = 0;
             this.lblTXT.Text = "0";
             // 
