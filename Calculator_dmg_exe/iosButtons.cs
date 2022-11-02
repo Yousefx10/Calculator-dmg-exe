@@ -54,10 +54,11 @@ namespace Calculator_dmg_exe
             switch (_direction)
             {
                 case CollapseDirection.Normal:
+                    this.Size = new Size(60,60);
                     break;
 
                 case CollapseDirection.Big:
-
+                    this.Size = new Size(100, 100);
                     break;
 
                 case CollapseDirection.Wide:
