@@ -38,7 +38,7 @@ namespace Calculator_dmg_exe
         {
             
             Size = new Size(400, 612);
-            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 60, 60));
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 50, 50));
             foreach(iosButtons iob in flowLayoutPanel1.Controls)
             {
                 iob.Direction = iosButtons.CollapseDirection.Big;
@@ -47,12 +47,9 @@ namespace Calculator_dmg_exe
             iosButtons17.Direction = iosButtons.CollapseDirection.wider;
             flowLayoutPanel1.Size = new Size(400, 494);
             panel1.Size = new Size(400, 122);
-
+            navButtons1.Location = new Point(21, 9);
             CenterToScreen();
 
         }
-
-
-
     }
 }
