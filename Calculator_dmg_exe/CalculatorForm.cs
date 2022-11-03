@@ -48,7 +48,7 @@ namespace Calculator_dmg_exe
 
                 iosButtons17.Direction = iosButtons.CollapseDirection.wider;
                 flowLayoutPanel1.Size = new Size(400, 494);
-                panel1.Size = new Size(400, 122);
+                panel_result.Size = new Size(400, 122);
                 navButtons1.Location = new Point(21, 9);
                 CenterToScreen();
             }
@@ -63,7 +63,7 @@ namespace Calculator_dmg_exe
                 }
                 iosButtons17.Direction = iosButtons.CollapseDirection.Wide;
                 flowLayoutPanel1.Size = new Size(421,296);
-                panel1.Size = new Size(241,93);
+                panel_result.Size = new Size(241,93);
                 navButtons1.Location = new Point(8,5);
 
             }
@@ -71,5 +71,54 @@ namespace Calculator_dmg_exe
 
 
         }
+
+
+
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
+
+
+
+
+        private void panel_result_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+
+        private void panel_result_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+
+        }
+
+        private void panel_result_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+
+        }
+
+        public void moveform(int gimmeaction)
+        {
+            if (gimmeaction == 0)
+                panel_result_MouseDown(panel_result, null);
+            else if(gimmeaction == 1)
+                panel_result_MouseUp(panel_result, null);
+            else
+                panel_result_MouseMove(panel_result, null);
+
+
+
+        }
+
+
+
+
     }
 }

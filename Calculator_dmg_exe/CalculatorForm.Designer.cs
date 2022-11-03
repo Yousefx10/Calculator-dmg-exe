@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel_result = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.navButtons1 = new Calculator_dmg_exe.navButtons();
             this.iosButtons1 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons2 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons3 = new Calculator_dmg_exe.iosButtons();
@@ -48,11 +51,8 @@
             this.iosButtons17 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons18 = new Calculator_dmg_exe.iosButtons();
             this.iosButtons19 = new Calculator_dmg_exe.iosButtons();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.navButtons1 = new Calculator_dmg_exe.navButtons();
-            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panel_result.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -81,6 +81,38 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(241, 296);
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // panel_result
+            // 
+            this.panel_result.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
+            this.panel_result.Controls.Add(this.navButtons1);
+            this.panel_result.Controls.Add(this.label1);
+            this.panel_result.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_result.Location = new System.Drawing.Point(0, 0);
+            this.panel_result.Name = "panel_result";
+            this.panel_result.Size = new System.Drawing.Size(241, 93);
+            this.panel_result.TabIndex = 1;
+            this.panel_result.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseDown);
+            this.panel_result.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseMove);
+            this.panel_result.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseUp);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(199, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "0";
+            // 
+            // navButtons1
+            // 
+            this.navButtons1.Location = new System.Drawing.Point(8, 5);
+            this.navButtons1.Name = "navButtons1";
+            this.navButtons1.Size = new System.Drawing.Size(75, 23);
+            this.navButtons1.TabIndex = 1;
             // 
             // iosButtons1
             // 
@@ -306,6 +338,9 @@
             this.iosButtons17.Size = new System.Drawing.Size(120, 60);
             this.iosButtons17.TabIndex = 16;
             this.iosButtons17.Text = "0";
+            this.iosButtons17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseDown);
+            this.iosButtons17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseMove);
+            this.iosButtons17.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseUp);
             // 
             // iosButtons18
             // 
@@ -334,42 +369,13 @@
             this.iosButtons19.TabIndex = 18;
             this.iosButtons19.Text = "=";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
-            this.panel1.Controls.Add(this.navButtons1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(241, 93);
-            this.panel1.TabIndex = 1;
-            // 
-            // navButtons1
-            // 
-            this.navButtons1.Location = new System.Drawing.Point(8, 5);
-            this.navButtons1.Name = "navButtons1";
-            this.navButtons1.Size = new System.Drawing.Size(75, 23);
-            this.navButtons1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(199, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "0";
-            // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(241, 389);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel_result);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -377,8 +383,8 @@
             this.Name = "CalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel_result.ResumeLayout(false);
+            this.panel_result.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -405,7 +411,7 @@
         private iosButtons iosButtons17;
         private iosButtons iosButtons18;
         private iosButtons iosButtons19;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_result;
         private System.Windows.Forms.Label label1;
         private navButtons navButtons1;
     }
