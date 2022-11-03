@@ -45,6 +45,7 @@
             this.ico_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.ico_red.TabIndex = 0;
             this.ico_red.TabStop = false;
+            this.ico_red.Click += new System.EventHandler(this.ico_red_Click);
             this.ico_red.MouseEnter += new System.EventHandler(this.ico_red_MouseEnter);
             this.ico_red.MouseLeave += new System.EventHandler(this.ico_red_MouseLeave);
             // 

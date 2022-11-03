@@ -38,5 +38,10 @@ namespace Calculator_dmg_exe
             (Application.OpenForms["CalculatorForm"] as CalculatorForm).bigSize();
 
         }
+
+        private void ico_red_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

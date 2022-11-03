@@ -36,9 +36,9 @@ namespace Calculator_dmg_exe
 
          public void bigSize()
         {
-
+            
             Size = new Size(400, 612);
-            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 60, 60));
             foreach(iosButtons iob in flowLayoutPanel1.Controls)
             {
                 iob.Direction = iosButtons.CollapseDirection.Big;
