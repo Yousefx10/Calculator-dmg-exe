@@ -33,14 +33,15 @@
             // 
             // lblTXT
             // 
-            this.lblTXT.AutoSize = true;
+            this.lblTXT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTXT.ForeColor = System.Drawing.Color.White;
-            this.lblTXT.Location = new System.Drawing.Point(17, 16);
+            this.lblTXT.Location = new System.Drawing.Point(0, 0);
             this.lblTXT.Name = "lblTXT";
-            this.lblTXT.Size = new System.Drawing.Size(26, 29);
+            this.lblTXT.Size = new System.Drawing.Size(62, 62);
             this.lblTXT.TabIndex = 0;
             this.lblTXT.Text = "0";
+            this.lblTXT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // iosButtons
             // 
@@ -49,10 +50,7 @@
             this.Controls.Add(this.lblTXT);
             this.Name = "iosButtons";
             this.Size = new System.Drawing.Size(62, 62);
-            this.Load += new System.EventHandler(this.iosButtons_SizeChanged);
-            this.SizeChanged += new System.EventHandler(this.iosButtons_SizeChanged);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

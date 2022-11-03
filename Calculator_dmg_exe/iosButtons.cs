@@ -173,7 +173,7 @@ namespace Calculator_dmg_exe
 
         private void iosButtons_SizeChanged(object sender, EventArgs e)
         {
-            
+            //it was a good idea to center the label "i mean BEFORE"
            // lblTXT.Left = (ClientSize.Width - lblTXT.Width) / 2;
             //lblTXT.Top  = (ClientSize.Height - lblTXT.Height) / 2;
 
