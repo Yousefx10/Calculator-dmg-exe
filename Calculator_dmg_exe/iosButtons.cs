@@ -142,7 +142,7 @@ namespace Calculator_dmg_exe
             (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseMove(sender, null);
                 nn = false;
             }
-            
+            //
            
             //   nn = false;
            // MessageBox.Show("");
