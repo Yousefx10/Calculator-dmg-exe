@@ -29,317 +29,316 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.iosButtons1 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons2 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons3 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons4 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons5 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons6 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons7 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons8 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons9 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons10 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons11 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons12 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons13 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons14 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons15 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons16 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons17 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons18 = new Calculator_dmg_exe.iosButtons();
-            this.iosButtons19 = new Calculator_dmg_exe.iosButtons();
+            this.btn_ac = new Calculator_dmg_exe.iosButtons();
+            this.btn_mins_plus = new Calculator_dmg_exe.iosButtons();
+            this.btn_remainder = new Calculator_dmg_exe.iosButtons();
+            this.btn_dividing = new Calculator_dmg_exe.iosButtons();
+            this.btn_seven = new Calculator_dmg_exe.iosButtons();
+            this.btn_eight = new Calculator_dmg_exe.iosButtons();
+            this.btn_nine = new Calculator_dmg_exe.iosButtons();
+            this.btn_multi = new Calculator_dmg_exe.iosButtons();
+            this.btn_four = new Calculator_dmg_exe.iosButtons();
+            this.ftn_five = new Calculator_dmg_exe.iosButtons();
+            this.btn_six = new Calculator_dmg_exe.iosButtons();
+            this.btn_minus = new Calculator_dmg_exe.iosButtons();
+            this.btn_one = new Calculator_dmg_exe.iosButtons();
+            this.btn_two = new Calculator_dmg_exe.iosButtons();
+            this.btn_three = new Calculator_dmg_exe.iosButtons();
+            this.btn_plus = new Calculator_dmg_exe.iosButtons();
+            this.btn_zero = new Calculator_dmg_exe.iosButtons();
+            this.btn_dot = new Calculator_dmg_exe.iosButtons();
+            this.btn_equal = new Calculator_dmg_exe.iosButtons();
             this.panel_result = new System.Windows.Forms.Panel();
             this.navButtons1 = new Calculator_dmg_exe.navButtons();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_result = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel_result.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons1);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons2);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons3);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons4);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons5);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons6);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons7);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons8);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons9);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons10);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons11);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons12);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons13);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons14);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons15);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons16);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons17);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons18);
-            this.flowLayoutPanel1.Controls.Add(this.iosButtons19);
+            this.flowLayoutPanel1.Controls.Add(this.btn_ac);
+            this.flowLayoutPanel1.Controls.Add(this.btn_mins_plus);
+            this.flowLayoutPanel1.Controls.Add(this.btn_remainder);
+            this.flowLayoutPanel1.Controls.Add(this.btn_dividing);
+            this.flowLayoutPanel1.Controls.Add(this.btn_seven);
+            this.flowLayoutPanel1.Controls.Add(this.btn_eight);
+            this.flowLayoutPanel1.Controls.Add(this.btn_nine);
+            this.flowLayoutPanel1.Controls.Add(this.btn_multi);
+            this.flowLayoutPanel1.Controls.Add(this.btn_four);
+            this.flowLayoutPanel1.Controls.Add(this.ftn_five);
+            this.flowLayoutPanel1.Controls.Add(this.btn_six);
+            this.flowLayoutPanel1.Controls.Add(this.btn_minus);
+            this.flowLayoutPanel1.Controls.Add(this.btn_one);
+            this.flowLayoutPanel1.Controls.Add(this.btn_two);
+            this.flowLayoutPanel1.Controls.Add(this.btn_three);
+            this.flowLayoutPanel1.Controls.Add(this.btn_plus);
+            this.flowLayoutPanel1.Controls.Add(this.btn_zero);
+            this.flowLayoutPanel1.Controls.Add(this.btn_dot);
+            this.flowLayoutPanel1.Controls.Add(this.btn_equal);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 80);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(241, 296);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // iosButtons1
+            // btn_ac
             // 
-            this.iosButtons1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(83)))), ((int)(((byte)(91)))));
-            this.iosButtons1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons1.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons1.Location = new System.Drawing.Point(0, 0);
-            this.iosButtons1.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons1.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons1.Name = "iosButtons1";
-            this.iosButtons1.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons1.TabIndex = 0;
-            this.iosButtons1.Text = "AC";
+            this.btn_ac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(83)))), ((int)(((byte)(91)))));
+            this.btn_ac.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_ac.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_ac.Location = new System.Drawing.Point(0, 0);
+            this.btn_ac.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_ac.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_ac.Name = "btn_ac";
+            this.btn_ac.Size = new System.Drawing.Size(60, 60);
+            this.btn_ac.TabIndex = 0;
+            this.btn_ac.Text = "AC";
             // 
-            // iosButtons2
+            // btn_mins_plus
             // 
-            this.iosButtons2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(83)))), ((int)(((byte)(91)))));
-            this.iosButtons2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons2.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons2.Location = new System.Drawing.Point(60, 0);
-            this.iosButtons2.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons2.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons2.Name = "iosButtons2";
-            this.iosButtons2.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons2.TabIndex = 1;
-            this.iosButtons2.Text = "+/-";
+            this.btn_mins_plus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(83)))), ((int)(((byte)(91)))));
+            this.btn_mins_plus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_mins_plus.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_mins_plus.Location = new System.Drawing.Point(60, 0);
+            this.btn_mins_plus.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_mins_plus.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_mins_plus.Name = "btn_mins_plus";
+            this.btn_mins_plus.Size = new System.Drawing.Size(60, 60);
+            this.btn_mins_plus.TabIndex = 1;
+            this.btn_mins_plus.Text = "+/-";
             // 
-            // iosButtons3
+            // btn_remainder
             // 
-            this.iosButtons3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(83)))), ((int)(((byte)(91)))));
-            this.iosButtons3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons3.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons3.Location = new System.Drawing.Point(120, 0);
-            this.iosButtons3.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons3.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons3.Name = "iosButtons3";
-            this.iosButtons3.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons3.TabIndex = 2;
-            this.iosButtons3.Text = "%";
+            this.btn_remainder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(83)))), ((int)(((byte)(91)))));
+            this.btn_remainder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_remainder.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_remainder.Location = new System.Drawing.Point(120, 0);
+            this.btn_remainder.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_remainder.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_remainder.Name = "btn_remainder";
+            this.btn_remainder.Size = new System.Drawing.Size(60, 60);
+            this.btn_remainder.TabIndex = 2;
+            this.btn_remainder.Text = "%";
             // 
-            // iosButtons4
+            // btn_dividing
             // 
-            this.iosButtons4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
-            this.iosButtons4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons4.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.flowLayoutPanel1.SetFlowBreak(this.iosButtons4, true);
-            this.iosButtons4.Location = new System.Drawing.Point(180, 0);
-            this.iosButtons4.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons4.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons4.Name = "iosButtons4";
-            this.iosButtons4.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons4.TabIndex = 3;
-            this.iosButtons4.Text = "÷";
+            this.btn_dividing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
+            this.btn_dividing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_dividing.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.flowLayoutPanel1.SetFlowBreak(this.btn_dividing, true);
+            this.btn_dividing.Location = new System.Drawing.Point(180, 0);
+            this.btn_dividing.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_dividing.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_dividing.Name = "btn_dividing";
+            this.btn_dividing.Size = new System.Drawing.Size(60, 60);
+            this.btn_dividing.TabIndex = 3;
+            this.btn_dividing.Text = "÷";
             // 
-            // iosButtons5
+            // btn_seven
             // 
-            this.iosButtons5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.iosButtons5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons5.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons5.Location = new System.Drawing.Point(0, 60);
-            this.iosButtons5.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons5.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons5.Name = "iosButtons5";
-            this.iosButtons5.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons5.TabIndex = 4;
-            this.iosButtons5.Text = "7";
+            this.btn_seven.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.btn_seven.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_seven.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_seven.Location = new System.Drawing.Point(0, 60);
+            this.btn_seven.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_seven.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_seven.Name = "btn_seven";
+            this.btn_seven.Size = new System.Drawing.Size(60, 60);
+            this.btn_seven.TabIndex = 4;
+            this.btn_seven.Text = "7";
             // 
-            // iosButtons6
+            // btn_eight
             // 
-            this.iosButtons6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.iosButtons6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons6.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons6.Location = new System.Drawing.Point(60, 60);
-            this.iosButtons6.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons6.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons6.Name = "iosButtons6";
-            this.iosButtons6.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons6.TabIndex = 5;
-            this.iosButtons6.Text = "8";
+            this.btn_eight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.btn_eight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_eight.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_eight.Location = new System.Drawing.Point(60, 60);
+            this.btn_eight.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_eight.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_eight.Name = "btn_eight";
+            this.btn_eight.Size = new System.Drawing.Size(60, 60);
+            this.btn_eight.TabIndex = 5;
+            this.btn_eight.Text = "8";
             // 
-            // iosButtons7
+            // btn_nine
             // 
-            this.iosButtons7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.iosButtons7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons7.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons7.Location = new System.Drawing.Point(120, 60);
-            this.iosButtons7.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons7.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons7.Name = "iosButtons7";
-            this.iosButtons7.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons7.TabIndex = 6;
-            this.iosButtons7.Text = "9";
+            this.btn_nine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.btn_nine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_nine.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_nine.Location = new System.Drawing.Point(120, 60);
+            this.btn_nine.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_nine.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_nine.Name = "btn_nine";
+            this.btn_nine.Size = new System.Drawing.Size(60, 60);
+            this.btn_nine.TabIndex = 6;
+            this.btn_nine.Text = "9";
             // 
-            // iosButtons8
+            // btn_multi
             // 
-            this.iosButtons8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
-            this.iosButtons8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons8.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.flowLayoutPanel1.SetFlowBreak(this.iosButtons8, true);
-            this.iosButtons8.Location = new System.Drawing.Point(180, 60);
-            this.iosButtons8.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons8.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons8.Name = "iosButtons8";
-            this.iosButtons8.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons8.TabIndex = 7;
-            this.iosButtons8.Text = "x";
+            this.btn_multi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
+            this.btn_multi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_multi.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.flowLayoutPanel1.SetFlowBreak(this.btn_multi, true);
+            this.btn_multi.Location = new System.Drawing.Point(180, 60);
+            this.btn_multi.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_multi.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_multi.Name = "btn_multi";
+            this.btn_multi.Size = new System.Drawing.Size(60, 60);
+            this.btn_multi.TabIndex = 7;
+            this.btn_multi.Text = "x";
             // 
-            // iosButtons9
+            // btn_four
             // 
-            this.iosButtons9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.iosButtons9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons9.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons9.Location = new System.Drawing.Point(0, 120);
-            this.iosButtons9.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons9.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons9.Name = "iosButtons9";
-            this.iosButtons9.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons9.TabIndex = 8;
-            this.iosButtons9.Text = "4";
+            this.btn_four.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.btn_four.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_four.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_four.Location = new System.Drawing.Point(0, 120);
+            this.btn_four.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_four.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_four.Name = "btn_four";
+            this.btn_four.Size = new System.Drawing.Size(60, 60);
+            this.btn_four.TabIndex = 8;
+            this.btn_four.Text = "4";
             // 
-            // iosButtons10
+            // ftn_five
             // 
-            this.iosButtons10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.iosButtons10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons10.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons10.Location = new System.Drawing.Point(60, 120);
-            this.iosButtons10.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons10.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons10.Name = "iosButtons10";
-            this.iosButtons10.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons10.TabIndex = 9;
-            this.iosButtons10.Text = "5";
+            this.ftn_five.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.ftn_five.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ftn_five.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.ftn_five.Location = new System.Drawing.Point(60, 120);
+            this.ftn_five.Margin = new System.Windows.Forms.Padding(0);
+            this.ftn_five.MinimumSize = new System.Drawing.Size(60, 60);
+            this.ftn_five.Name = "ftn_five";
+            this.ftn_five.Size = new System.Drawing.Size(60, 60);
+            this.ftn_five.TabIndex = 9;
+            this.ftn_five.Text = "5";
             // 
-            // iosButtons11
+            // btn_six
             // 
-            this.iosButtons11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.iosButtons11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons11.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons11.Location = new System.Drawing.Point(120, 120);
-            this.iosButtons11.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons11.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons11.Name = "iosButtons11";
-            this.iosButtons11.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons11.TabIndex = 10;
-            this.iosButtons11.Text = "6";
+            this.btn_six.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.btn_six.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_six.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_six.Location = new System.Drawing.Point(120, 120);
+            this.btn_six.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_six.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_six.Name = "btn_six";
+            this.btn_six.Size = new System.Drawing.Size(60, 60);
+            this.btn_six.TabIndex = 10;
+            this.btn_six.Text = "6";
             // 
-            // iosButtons12
+            // btn_minus
             // 
-            this.iosButtons12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
-            this.iosButtons12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons12.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.flowLayoutPanel1.SetFlowBreak(this.iosButtons12, true);
-            this.iosButtons12.Location = new System.Drawing.Point(180, 120);
-            this.iosButtons12.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons12.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons12.Name = "iosButtons12";
-            this.iosButtons12.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons12.TabIndex = 11;
-            this.iosButtons12.Text = "—";
+            this.btn_minus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
+            this.btn_minus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_minus.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.flowLayoutPanel1.SetFlowBreak(this.btn_minus, true);
+            this.btn_minus.Location = new System.Drawing.Point(180, 120);
+            this.btn_minus.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_minus.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_minus.Name = "btn_minus";
+            this.btn_minus.Size = new System.Drawing.Size(60, 60);
+            this.btn_minus.TabIndex = 11;
+            this.btn_minus.Text = "—";
             // 
-            // iosButtons13
+            // btn_one
             // 
-            this.iosButtons13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.iosButtons13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons13.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons13.Location = new System.Drawing.Point(0, 180);
-            this.iosButtons13.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons13.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons13.Name = "iosButtons13";
-            this.iosButtons13.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons13.TabIndex = 12;
-            this.iosButtons13.Text = "1";
+            this.btn_one.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.btn_one.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_one.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_one.Location = new System.Drawing.Point(0, 180);
+            this.btn_one.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_one.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_one.Name = "btn_one";
+            this.btn_one.Size = new System.Drawing.Size(60, 60);
+            this.btn_one.TabIndex = 12;
+            this.btn_one.Text = "1";
             // 
-            // iosButtons14
+            // btn_two
             // 
-            this.iosButtons14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.iosButtons14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons14.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons14.Location = new System.Drawing.Point(60, 180);
-            this.iosButtons14.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons14.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons14.Name = "iosButtons14";
-            this.iosButtons14.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons14.TabIndex = 13;
-            this.iosButtons14.Text = "2";
+            this.btn_two.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.btn_two.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_two.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_two.Location = new System.Drawing.Point(60, 180);
+            this.btn_two.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_two.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_two.Name = "btn_two";
+            this.btn_two.Size = new System.Drawing.Size(60, 60);
+            this.btn_two.TabIndex = 13;
+            this.btn_two.Text = "2";
             // 
-            // iosButtons15
+            // btn_three
             // 
-            this.iosButtons15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.iosButtons15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons15.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons15.Location = new System.Drawing.Point(120, 180);
-            this.iosButtons15.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons15.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons15.Name = "iosButtons15";
-            this.iosButtons15.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons15.TabIndex = 14;
-            this.iosButtons15.Text = "3";
+            this.btn_three.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.btn_three.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_three.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_three.Location = new System.Drawing.Point(120, 180);
+            this.btn_three.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_three.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_three.Name = "btn_three";
+            this.btn_three.Size = new System.Drawing.Size(60, 60);
+            this.btn_three.TabIndex = 14;
+            this.btn_three.Text = "3";
             // 
-            // iosButtons16
+            // btn_plus
             // 
-            this.iosButtons16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
-            this.iosButtons16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons16.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.flowLayoutPanel1.SetFlowBreak(this.iosButtons16, true);
-            this.iosButtons16.Location = new System.Drawing.Point(180, 180);
-            this.iosButtons16.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons16.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons16.Name = "iosButtons16";
-            this.iosButtons16.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons16.TabIndex = 15;
-            this.iosButtons16.Text = "+";
+            this.btn_plus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
+            this.btn_plus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_plus.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.flowLayoutPanel1.SetFlowBreak(this.btn_plus, true);
+            this.btn_plus.Location = new System.Drawing.Point(180, 180);
+            this.btn_plus.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_plus.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_plus.Name = "btn_plus";
+            this.btn_plus.Size = new System.Drawing.Size(60, 60);
+            this.btn_plus.TabIndex = 15;
+            this.btn_plus.Text = "+";
             // 
-            // iosButtons17
+            // btn_zero
             // 
-            this.iosButtons17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.iosButtons17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons17.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Wide;
-            this.iosButtons17.Location = new System.Drawing.Point(0, 240);
-            this.iosButtons17.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons17.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons17.Name = "iosButtons17";
-            this.iosButtons17.Size = new System.Drawing.Size(120, 60);
-            this.iosButtons17.TabIndex = 16;
-            this.iosButtons17.Text = "0";
-            this.iosButtons17.Click += new System.EventHandler(this.iosButtons17_Click_1);
+            this.btn_zero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.btn_zero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_zero.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Wide;
+            this.btn_zero.Location = new System.Drawing.Point(0, 240);
+            this.btn_zero.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_zero.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_zero.Name = "btn_zero";
+            this.btn_zero.Size = new System.Drawing.Size(120, 60);
+            this.btn_zero.TabIndex = 16;
+            this.btn_zero.Text = "0";
             // 
-            // iosButtons18
+            // btn_dot
             // 
-            this.iosButtons18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.iosButtons18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons18.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.iosButtons18.Location = new System.Drawing.Point(120, 240);
-            this.iosButtons18.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons18.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons18.Name = "iosButtons18";
-            this.iosButtons18.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons18.TabIndex = 17;
-            this.iosButtons18.Text = "•";
+            this.btn_dot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.btn_dot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_dot.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_dot.Location = new System.Drawing.Point(120, 240);
+            this.btn_dot.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_dot.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_dot.Name = "btn_dot";
+            this.btn_dot.Size = new System.Drawing.Size(60, 60);
+            this.btn_dot.TabIndex = 17;
+            this.btn_dot.Text = "•";
             // 
-            // iosButtons19
+            // btn_equal
             // 
-            this.iosButtons19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
-            this.iosButtons19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iosButtons19.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.flowLayoutPanel1.SetFlowBreak(this.iosButtons19, true);
-            this.iosButtons19.Location = new System.Drawing.Point(180, 240);
-            this.iosButtons19.Margin = new System.Windows.Forms.Padding(0);
-            this.iosButtons19.MinimumSize = new System.Drawing.Size(60, 60);
-            this.iosButtons19.Name = "iosButtons19";
-            this.iosButtons19.Size = new System.Drawing.Size(60, 60);
-            this.iosButtons19.TabIndex = 18;
-            this.iosButtons19.Text = "=";
+            this.btn_equal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(62)))));
+            this.btn_equal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_equal.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.flowLayoutPanel1.SetFlowBreak(this.btn_equal, true);
+            this.btn_equal.Location = new System.Drawing.Point(180, 240);
+            this.btn_equal.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_equal.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_equal.Name = "btn_equal";
+            this.btn_equal.Size = new System.Drawing.Size(60, 60);
+            this.btn_equal.TabIndex = 18;
+            this.btn_equal.Text = "=";
             // 
             // panel_result
             // 
             this.panel_result.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
             this.panel_result.Controls.Add(this.navButtons1);
-            this.panel_result.Controls.Add(this.label1);
+            this.panel_result.Controls.Add(this.label_result);
             this.panel_result.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_result.Location = new System.Drawing.Point(0, -4);
             this.panel_result.Name = "panel_result";
@@ -356,17 +355,17 @@
             this.navButtons1.Size = new System.Drawing.Size(75, 23);
             this.navButtons1.TabIndex = 1;
             // 
-            // label1
+            // label_result
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "12345678901231234567890123";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label_result.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_result.ForeColor = System.Drawing.Color.White;
+            this.label_result.Location = new System.Drawing.Point(0, 37);
+            this.label_result.Name = "label_result";
+            this.label_result.Size = new System.Drawing.Size(241, 47);
+            this.label_result.TabIndex = 0;
+            this.label_result.Text = "1234567890";
+            this.label_result.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CalculatorForm
             // 
@@ -390,27 +389,27 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private iosButtons iosButtons1;
-        private iosButtons iosButtons2;
-        private iosButtons iosButtons3;
-        private iosButtons iosButtons4;
-        private iosButtons iosButtons5;
-        private iosButtons iosButtons6;
-        private iosButtons iosButtons7;
-        private iosButtons iosButtons8;
-        private iosButtons iosButtons9;
-        private iosButtons iosButtons10;
-        private iosButtons iosButtons11;
-        private iosButtons iosButtons12;
-        private iosButtons iosButtons13;
-        private iosButtons iosButtons14;
-        private iosButtons iosButtons15;
-        private iosButtons iosButtons16;
-        private iosButtons iosButtons17;
-        private iosButtons iosButtons18;
-        private iosButtons iosButtons19;
+        private iosButtons btn_ac;
+        private iosButtons btn_mins_plus;
+        private iosButtons btn_remainder;
+        private iosButtons btn_dividing;
+        private iosButtons btn_seven;
+        private iosButtons btn_eight;
+        private iosButtons btn_nine;
+        private iosButtons btn_multi;
+        private iosButtons btn_four;
+        private iosButtons ftn_five;
+        private iosButtons btn_six;
+        private iosButtons btn_minus;
+        private iosButtons btn_one;
+        private iosButtons btn_two;
+        private iosButtons btn_three;
+        private iosButtons btn_plus;
+        private iosButtons btn_zero;
+        private iosButtons btn_dot;
+        private iosButtons btn_equal;
         private System.Windows.Forms.Panel panel_result;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_result;
         private navButtons navButtons1;
     }
 }

@@ -47,7 +47,7 @@ namespace Calculator_dmg_exe
                     iob.Direction = iosButtons.CollapseDirection.Big;
                 }
 
-                iosButtons17.Direction = iosButtons.CollapseDirection.wider;
+                btn_zero.Direction = iosButtons.CollapseDirection.wider;
                 flowLayoutPanel1.Size = new Size(400, 494);
                 panel_result.Size = new Size(400, 122);
                 navButtons1.Location = new Point(21, 9);
@@ -65,7 +65,7 @@ namespace Calculator_dmg_exe
                 {
                     iob.Direction = iosButtons.CollapseDirection.Normal;
                 }
-                iosButtons17.Direction = iosButtons.CollapseDirection.Wide;
+                btn_zero.Direction = iosButtons.CollapseDirection.Wide;
                 flowLayoutPanel1.Size = new Size(421,296);
 
                 //new size :241, 78
@@ -116,12 +116,12 @@ namespace Calculator_dmg_exe
         }
 
         bool nn = true;
-
+        //if (nn)
+        //this code inside click action of buttons
 
         private void iosButtons17_Click_1(object sender, EventArgs e)
         {
-            if (nn)
-                MessageBox.Show("i'm zvvero");
+
         }
     }
 }
