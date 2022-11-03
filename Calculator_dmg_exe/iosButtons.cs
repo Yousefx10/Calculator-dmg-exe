@@ -63,6 +63,7 @@ namespace Calculator_dmg_exe
                 case CollapseDirection.Big:
                     this.Size = new Size(100, 100);
                     lblTXT.Font = new System.Drawing.Font(lblTXT.Font.Name, 35F);
+
                     break;
 
                 case CollapseDirection.Wide:
@@ -146,15 +147,15 @@ namespace Calculator_dmg_exe
             switch (_textsize)
             {
                 case TextAlignSize.Normal:
-                    lblTXT.Location = new Point(17, 16);
+                //    lblTXT.Location = new Point(17, 16);
                     break;
 
                 case TextAlignSize.Left:
-                    lblTXT.Location = new Point(9, lblTXT.Location.Y);
+                //    lblTXT.Location = new Point(9, lblTXT.Location.Y);
                     break;
 
                 case TextAlignSize.Center:
-                    lblTXT.Location = new Point(46, lblTXT.Location.Y);
+               //     lblTXT.Location = new Point(46, lblTXT.Location.Y);
                     break;
 
             }
@@ -168,6 +169,14 @@ namespace Calculator_dmg_exe
         public iosButtons()
         {
             InitializeComponent();
+        }
+
+        private void iosButtons_SizeChanged(object sender, EventArgs e)
+        {
+            
+           // lblTXT.Left = (ClientSize.Width - lblTXT.Width) / 2;
+            //lblTXT.Top  = (ClientSize.Height - lblTXT.Height) / 2;
+
         }
     }
 }

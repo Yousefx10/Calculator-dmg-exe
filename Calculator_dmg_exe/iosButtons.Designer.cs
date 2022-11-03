@@ -49,6 +49,8 @@
             this.Controls.Add(this.lblTXT);
             this.Name = "iosButtons";
             this.Size = new System.Drawing.Size(62, 62);
+            this.Load += new System.EventHandler(this.iosButtons_SizeChanged);
+            this.SizeChanged += new System.EventHandler(this.iosButtons_SizeChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
