@@ -115,9 +115,30 @@ namespace Calculator_dmg_exe
         public iosButtons()
         {
             InitializeComponent();
+
         }
 
+        private void lblTXT_Click(object sender, EventArgs e)
+        {
+            //panel_result_MouseMove(panel_result, null);
 
 
+
+        }
+
+        private void lblTXT_MouseDown(object sender, MouseEventArgs e)
+        {
+            (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseDown(sender, null);
+        }
+
+        private void lblTXT_MouseMove(object sender, MouseEventArgs e)
+        {
+            (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseMove(sender, null);
+        }
+
+        private void lblTXT_MouseUp(object sender, MouseEventArgs e)
+        {
+            (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseUp(sender, null);
+        }
     }
 }

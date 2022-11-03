@@ -338,9 +338,6 @@
             this.iosButtons17.Size = new System.Drawing.Size(120, 60);
             this.iosButtons17.TabIndex = 16;
             this.iosButtons17.Text = "0";
-            this.iosButtons17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseDown);
-            this.iosButtons17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseMove);
-            this.iosButtons17.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseUp);
             // 
             // iosButtons18
             // 

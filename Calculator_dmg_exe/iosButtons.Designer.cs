@@ -42,6 +42,9 @@
             this.lblTXT.TabIndex = 0;
             this.lblTXT.Text = "0";
             this.lblTXT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTXT.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTXT_MouseDown);
+            this.lblTXT.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblTXT_MouseMove);
+            this.lblTXT.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lblTXT_MouseUp);
             // 
             // iosButtons
             // 

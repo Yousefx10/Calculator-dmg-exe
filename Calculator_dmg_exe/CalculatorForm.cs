@@ -29,6 +29,7 @@ namespace Calculator_dmg_exe
         {
             InitializeComponent();
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
+
         }
 
 
@@ -81,14 +82,15 @@ namespace Calculator_dmg_exe
 
 
 
-        private void panel_result_MouseDown(object sender, MouseEventArgs e)
+        public void panel_result_MouseDown(object sender, MouseEventArgs e)
         {
+
             dragging = true;
             dragCursorPoint = Cursor.Position;
             dragFormPoint = this.Location;
         }
 
-        private void panel_result_MouseMove(object sender, MouseEventArgs e)
+        public void panel_result_MouseMove(object sender, MouseEventArgs e)
         {
             if (dragging)
             {
@@ -98,24 +100,12 @@ namespace Calculator_dmg_exe
 
         }
 
-        private void panel_result_MouseUp(object sender, MouseEventArgs e)
+        public void panel_result_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
 
         }
 
-        public void moveform(int gimmeaction)
-        {
-            if (gimmeaction == 0)
-                panel_result_MouseDown(panel_result, null);
-            else if(gimmeaction == 1)
-                panel_result_MouseUp(panel_result, null);
-            else
-                panel_result_MouseMove(panel_result, null);
-
-
-
-        }
 
 
 
