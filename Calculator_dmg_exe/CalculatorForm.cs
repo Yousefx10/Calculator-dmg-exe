@@ -98,6 +98,7 @@ namespace Calculator_dmg_exe
                 this.Location = Point.Add(dragFormPoint, new Size(dif));
             }
 
+
         }
 
         public void panel_result_MouseUp(object sender, MouseEventArgs e)
@@ -106,9 +107,9 @@ namespace Calculator_dmg_exe
 
         }
 
-
-
-
-
+        private void iosButtons17_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
     }
 }

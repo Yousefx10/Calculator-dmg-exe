@@ -118,27 +118,49 @@ namespace Calculator_dmg_exe
 
         }
 
-        private void lblTXT_Click(object sender, EventArgs e)
-        {
-            //panel_result_MouseMove(panel_result, null);
 
-
-
-        }
-
+        bool nn = true;
+        bool nnok = false;
         private void lblTXT_MouseDown(object sender, MouseEventArgs e)
         {
+            //MessageBox.Show("down");
+
+            if (e.Button == MouseButtons.Left && e.Clicks == 1)
+            {
+
+            }
+            nnok = true;
             (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseDown(sender, null);
+
+
         }
 
         private void lblTXT_MouseMove(object sender, MouseEventArgs e)
         {
+            if(nnok)
+            {
             (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseMove(sender, null);
+                nn = false;
+            }
+            
+           
+            //   nn = false;
+           // MessageBox.Show("");
         }
 
         private void lblTXT_MouseUp(object sender, MouseEventArgs e)
         {
+            nnok = false;
+            nn = true;
             (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseUp(sender, null);
+        }
+
+
+        private void lblTXT_Click(object sender, EventArgs e)
+        {
+            if(nn)
+            MessageBox.Show("click");
+
         }
     }
 }
