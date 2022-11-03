@@ -34,6 +34,7 @@
             // lblTXT
             // 
             this.lblTXT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTXT.Enabled = false;
             this.lblTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTXT.ForeColor = System.Drawing.Color.White;
             this.lblTXT.Location = new System.Drawing.Point(0, 0);
@@ -42,7 +43,7 @@
             this.lblTXT.TabIndex = 0;
             this.lblTXT.Text = "0";
             this.lblTXT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTXT.Click += new System.EventHandler(this.lblTXT_Click);
+            this.lblTXT.Click += new System.EventHandler(this.iosButtons_Click);
             this.lblTXT.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTXT_MouseDown);
             this.lblTXT.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblTXT_MouseMove);
             this.lblTXT.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lblTXT_MouseUp);
@@ -54,6 +55,10 @@
             this.Controls.Add(this.lblTXT);
             this.Name = "iosButtons";
             this.Size = new System.Drawing.Size(62, 62);
+            this.Click += new System.EventHandler(this.iosButtons_Click);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.iosButtons_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.iosButtons_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.iosButtons_MouseUp);
             this.ResumeLayout(false);
 
         }

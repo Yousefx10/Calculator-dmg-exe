@@ -338,7 +338,7 @@
             this.iosButtons17.Size = new System.Drawing.Size(120, 60);
             this.iosButtons17.TabIndex = 16;
             this.iosButtons17.Text = "0";
-            this.iosButtons17.Click += new System.EventHandler(this.iosButtons17_Click);
+            this.iosButtons17.Click += new System.EventHandler(this.iosButtons17_Click_1);
             // 
             // iosButtons18
             // 

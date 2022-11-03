@@ -125,6 +125,29 @@ namespace Calculator_dmg_exe
         {
             //MessageBox.Show("down");
 
+
+
+        }
+
+        private void lblTXT_MouseMove(object sender, MouseEventArgs e)
+        {
+
+
+        }
+
+        private void lblTXT_MouseUp(object sender, MouseEventArgs e)
+        {
+        }
+
+
+        private void iosButtons_Click(object sender, EventArgs e)
+        {
+            if (nn)
+            MessageBox.Show("user clicked me");
+        }
+
+        private void iosButtons_MouseDown(object sender, MouseEventArgs e)
+        {
             if (e.Button == MouseButtons.Left && e.Clicks == 1)
             {
 
@@ -132,34 +155,22 @@ namespace Calculator_dmg_exe
             nnok = true;
             (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseDown(sender, null);
 
-
         }
 
-        private void lblTXT_MouseMove(object sender, MouseEventArgs e)
+        private void iosButtons_MouseMove(object sender, MouseEventArgs e)
         {
-            if(nnok)
+            if (nnok)
             {
-            (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseMove(sender, null);
+                (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseMove(sender, null);
                 nn = false;
             }
-            //
-           
-            //   nn = false;
-           // MessageBox.Show("");
         }
 
-        private void lblTXT_MouseUp(object sender, MouseEventArgs e)
+        private void iosButtons_MouseUp(object sender, MouseEventArgs e)
         {
             nnok = false;
             nn = true;
             (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseUp(sender, null);
-        }
-
-
-        private void lblTXT_Click(object sender, EventArgs e)
-        {
-            if(nn)
-            MessageBox.Show("click");
 
         }
     }

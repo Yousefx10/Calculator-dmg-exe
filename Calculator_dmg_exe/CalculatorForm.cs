@@ -96,6 +96,7 @@ namespace Calculator_dmg_exe
             {
                 Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
                 this.Location = Point.Add(dragFormPoint, new Size(dif));
+                nn = false;
             }
 
 
@@ -104,12 +105,16 @@ namespace Calculator_dmg_exe
         public void panel_result_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
-
+            nn = true;
         }
 
-        private void iosButtons17_Click(object sender, EventArgs e)
+        bool nn = true;
+
+
+        private void iosButtons17_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("");
+            if (nn)
+                MessageBox.Show("i'm zvvero");
         }
     }
 }
