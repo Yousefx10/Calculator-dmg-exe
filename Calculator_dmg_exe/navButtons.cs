@@ -43,5 +43,12 @@ namespace Calculator_dmg_exe
         {
             Application.Exit();
         }
+
+        private void ico_yellow_Click(object sender, EventArgs e)
+        {
+            (Application.OpenForms["CalculatorForm"] as CalculatorForm).WindowState = FormWindowState.Minimized;
+
+
+        }
     }
 }
