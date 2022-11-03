@@ -43,6 +43,8 @@ namespace Calculator_dmg_exe
             {
                 iob.Direction = iosButtons.CollapseDirection.Big;
             }
+
+            iosButtons17.Direction = iosButtons.CollapseDirection.wider;
             flowLayoutPanel1.Size = new Size(400, 494);
             panel1.Size = new Size(400, 122);
 

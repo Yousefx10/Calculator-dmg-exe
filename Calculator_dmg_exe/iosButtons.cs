@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Design;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +19,8 @@ namespace Calculator_dmg_exe
         {
             Normal,
             Big,
-            Wide
+            Wide,
+            wider
         }
         #region Collapse Direction
 
@@ -55,15 +57,28 @@ namespace Calculator_dmg_exe
             {
                 case CollapseDirection.Normal:
                     this.Size = new Size(60,60);
+                   lblTXT.Font = new System.Drawing.Font(lblTXT.Font.Name, 18F);
                     break;
 
                 case CollapseDirection.Big:
                     this.Size = new Size(100, 100);
+                    lblTXT.Font = new System.Drawing.Font(lblTXT.Font.Name, 35F);
                     break;
 
                 case CollapseDirection.Wide:
                     //sum of two buttons size
-                    this.Size = new Size(120,Height);
+                    this.Size = new Size(120, Height);
+                    lblTXT.Font = new System.Drawing.Font(lblTXT.Font.Name, 18F);
+                    break;
+
+                case CollapseDirection.wider:
+                    //sum of two buttons size
+                    this.Size = new Size(200, Height);
+                    lblTXT.Font = new System.Drawing.Font(lblTXT.Font.Name, 40F);
+
+                    //just for the wide button zero in case the maximum screen
+                    lblTXT.Location = new Point(66, lblTXT.Location.Y);
+
                     break;
             }
         }
