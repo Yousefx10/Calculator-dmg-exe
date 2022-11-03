@@ -33,22 +33,42 @@ namespace Calculator_dmg_exe
 
 
 
-
+        bool ismax=false;
          public void bigSize()
         {
-            
-            Size = new Size(400, 612);
-            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 50, 50));
-            foreach(iosButtons iob in flowLayoutPanel1.Controls)
+            if(!ismax)
             {
-                iob.Direction = iosButtons.CollapseDirection.Big;
+                ismax = true;
+                Size = new Size(400, 612);
+                Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 50, 50));
+                foreach (iosButtons iob in flowLayoutPanel1.Controls)
+                {
+                    iob.Direction = iosButtons.CollapseDirection.Big;
+                }
+
+                iosButtons17.Direction = iosButtons.CollapseDirection.wider;
+                flowLayoutPanel1.Size = new Size(400, 494);
+                panel1.Size = new Size(400, 122);
+                navButtons1.Location = new Point(21, 9);
+                CenterToScreen();
+            }
+            else
+            {
+                ismax = false;
+                Size = new Size(241, 389);
+                Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
+                foreach (iosButtons iob in flowLayoutPanel1.Controls)
+                {
+                    iob.Direction = iosButtons.CollapseDirection.Normal;
+                }
+                iosButtons17.Direction = iosButtons.CollapseDirection.Wide;
+                flowLayoutPanel1.Size = new Size(421,296);
+                panel1.Size = new Size(241,93);
+                navButtons1.Location = new Point(8,5);
+
             }
 
-            iosButtons17.Direction = iosButtons.CollapseDirection.wider;
-            flowLayoutPanel1.Size = new Size(400, 494);
-            panel1.Size = new Size(400, 122);
-            navButtons1.Location = new Point(21, 9);
-            CenterToScreen();
+
 
         }
     }
