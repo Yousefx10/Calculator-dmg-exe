@@ -94,7 +94,6 @@
             this.iosButtons1.Size = new System.Drawing.Size(60, 60);
             this.iosButtons1.TabIndex = 0;
             this.iosButtons1.Text = "AC";
-            this.iosButtons1.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Left;
             // 
             // iosButtons2
             // 
@@ -108,7 +107,6 @@
             this.iosButtons2.Size = new System.Drawing.Size(60, 60);
             this.iosButtons2.TabIndex = 1;
             this.iosButtons2.Text = "+/-";
-            this.iosButtons2.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Left;
             // 
             // iosButtons3
             // 
@@ -122,7 +120,6 @@
             this.iosButtons3.Size = new System.Drawing.Size(60, 60);
             this.iosButtons3.TabIndex = 2;
             this.iosButtons3.Text = "%";
-            this.iosButtons3.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Left;
             // 
             // iosButtons4
             // 
@@ -137,7 +134,6 @@
             this.iosButtons4.Size = new System.Drawing.Size(60, 60);
             this.iosButtons4.TabIndex = 3;
             this.iosButtons4.Text = "÷";
-            this.iosButtons4.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons5
             // 
@@ -151,7 +147,6 @@
             this.iosButtons5.Size = new System.Drawing.Size(60, 60);
             this.iosButtons5.TabIndex = 4;
             this.iosButtons5.Text = "7";
-            this.iosButtons5.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons6
             // 
@@ -165,7 +160,6 @@
             this.iosButtons6.Size = new System.Drawing.Size(60, 60);
             this.iosButtons6.TabIndex = 5;
             this.iosButtons6.Text = "8";
-            this.iosButtons6.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons7
             // 
@@ -179,7 +173,6 @@
             this.iosButtons7.Size = new System.Drawing.Size(60, 60);
             this.iosButtons7.TabIndex = 6;
             this.iosButtons7.Text = "9";
-            this.iosButtons7.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons8
             // 
@@ -194,7 +187,6 @@
             this.iosButtons8.Size = new System.Drawing.Size(60, 60);
             this.iosButtons8.TabIndex = 7;
             this.iosButtons8.Text = "x";
-            this.iosButtons8.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons9
             // 
@@ -208,7 +200,6 @@
             this.iosButtons9.Size = new System.Drawing.Size(60, 60);
             this.iosButtons9.TabIndex = 8;
             this.iosButtons9.Text = "4";
-            this.iosButtons9.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons10
             // 
@@ -222,7 +213,6 @@
             this.iosButtons10.Size = new System.Drawing.Size(60, 60);
             this.iosButtons10.TabIndex = 9;
             this.iosButtons10.Text = "5";
-            this.iosButtons10.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons11
             // 
@@ -236,7 +226,6 @@
             this.iosButtons11.Size = new System.Drawing.Size(60, 60);
             this.iosButtons11.TabIndex = 10;
             this.iosButtons11.Text = "6";
-            this.iosButtons11.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons12
             // 
@@ -251,7 +240,6 @@
             this.iosButtons12.Size = new System.Drawing.Size(60, 60);
             this.iosButtons12.TabIndex = 11;
             this.iosButtons12.Text = "—";
-            this.iosButtons12.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons13
             // 
@@ -265,7 +253,6 @@
             this.iosButtons13.Size = new System.Drawing.Size(60, 60);
             this.iosButtons13.TabIndex = 12;
             this.iosButtons13.Text = "1";
-            this.iosButtons13.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons14
             // 
@@ -279,7 +266,6 @@
             this.iosButtons14.Size = new System.Drawing.Size(60, 60);
             this.iosButtons14.TabIndex = 13;
             this.iosButtons14.Text = "2";
-            this.iosButtons14.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons15
             // 
@@ -293,7 +279,6 @@
             this.iosButtons15.Size = new System.Drawing.Size(60, 60);
             this.iosButtons15.TabIndex = 14;
             this.iosButtons15.Text = "3";
-            this.iosButtons15.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons16
             // 
@@ -308,7 +293,6 @@
             this.iosButtons16.Size = new System.Drawing.Size(60, 60);
             this.iosButtons16.TabIndex = 15;
             this.iosButtons16.Text = "+";
-            this.iosButtons16.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons17
             // 
@@ -322,7 +306,6 @@
             this.iosButtons17.Size = new System.Drawing.Size(120, 60);
             this.iosButtons17.TabIndex = 16;
             this.iosButtons17.Text = "0";
-            this.iosButtons17.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Center;
             // 
             // iosButtons18
             // 
@@ -336,7 +319,6 @@
             this.iosButtons18.Size = new System.Drawing.Size(60, 60);
             this.iosButtons18.TabIndex = 17;
             this.iosButtons18.Text = "•";
-            this.iosButtons18.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // iosButtons19
             // 
@@ -351,7 +333,6 @@
             this.iosButtons19.Size = new System.Drawing.Size(60, 60);
             this.iosButtons19.TabIndex = 18;
             this.iosButtons19.Text = "=";
-            this.iosButtons19.TextSizeAlign = Calculator_dmg_exe.iosButtons.TextAlignSize.Normal;
             // 
             // panel1
             // 
