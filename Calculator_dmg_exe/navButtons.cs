@@ -31,5 +31,12 @@ namespace Calculator_dmg_exe
             ico_yellow.Image    = Resources.Y1;
             ico_green.Image     = Resources.G1;
         }
+
+        public void ico_green_Click(object sender, EventArgs e)
+        {
+            //to call a method from OPENED form
+            (Application.OpenForms["CalculatorForm"] as CalculatorForm).bigSize();
+
+        }
     }
 }
