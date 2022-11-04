@@ -169,14 +169,13 @@ namespace Calculator_dmg_exe
                     doNUM = true;
                 }
 
-                else 
-                    if(doNUM)
+                else if(doNUM)
                     label_result.Text += ((iosButtons)sender).Text;
-                    else
-                    {
-                        doNUM = true;
-                        label_result.Text = ((iosButtons)sender).Text;
-                    }
+                else
+                {
+                    doNUM = true;
+                    label_result.Text = ((iosButtons)sender).Text;
+                }
             changeCOLORS(btn_equal, false);
 
 
@@ -209,24 +208,24 @@ namespace Calculator_dmg_exe
 
             }
         }
-
         private void btn_equal_MouseUp(object sender, MouseEventArgs e)
         {
             if (nn)
             {
-                if (operation_status == 2)
-                    num = num + float.Parse(label_result.Text);
-                else if (operation_status == 3)
-                    num = num - float.Parse(label_result.Text);
-                else if (operation_status == 4)
-                    num = num * float.Parse(label_result.Text);
-                else if (operation_status == 5)
-                    num = num / float.Parse(label_result.Text);
+                    if (operation_status == 2)
+                        num = num + float.Parse(label_result.Text);
+                    else if (operation_status == 3)
+                        num = num - float.Parse(label_result.Text);
+                    else if (operation_status == 4)
+                        num = num * float.Parse(label_result.Text);
+                    else if (operation_status == 5)
+                        num = num / float.Parse(label_result.Text);
+                    else { return; }
+                    changeCOLORS(btn_equal, false);
+                    operation_status = 1;
+                    doNUM = false;
+                    label_result.Text = num.ToString();
 
-                changeCOLORS(btn_equal, false);
-                operation_status = 1;
-                doNUM = false;
-                label_result.Text = num.ToString();
             }
         }
 
