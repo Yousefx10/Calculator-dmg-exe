@@ -104,7 +104,7 @@ namespace Calculator_dmg_exe
             {
                 Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
                 this.Location = Point.Add(dragFormPoint, new Size(dif));
-                nn = false;
+
             }
 
 
@@ -113,10 +113,8 @@ namespace Calculator_dmg_exe
         public void panel_result_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
-            nn = true;
         }
 
-        bool nn = true;
         bool stooop=false;
         private void label_result_TextChanged(object sender, EventArgs e)
         {
@@ -160,7 +158,7 @@ namespace Calculator_dmg_exe
         private void btn_zero_MouseUp(object sender, MouseEventArgs e)
         {
 
-            if (nn && !stooop)
+            if (!stooop)
                 if (doNUM)
                     label_result.Text += ((iosButtons)sender).Text;
                 else if (OPclicked)
@@ -174,7 +172,7 @@ namespace Calculator_dmg_exe
 
         private void btn_one_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn && !stooop)
+            if ( !stooop)
             {
                 if (operation_status == 0)
                 {
@@ -199,8 +197,7 @@ namespace Calculator_dmg_exe
 
         private void btn_ac_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn)
-            {
+
                 label_result.Text ="0";
                 operation_status=0;
                 changeCOLORS(btn_equal, false);
@@ -208,14 +205,13 @@ namespace Calculator_dmg_exe
                 theDOT = false;
                 stooop = false;
                 OPclicked = false;
-            }
+
 
         }
 
         private void btn_plus_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn)
-            {
+
                 //if(operation_status != 0)
                 {
                     changeCOLORS(btn_plus);
@@ -227,12 +223,11 @@ namespace Calculator_dmg_exe
                     OPclicked = true;
                 }
 
-            }
+
         }
         private void btn_equal_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn)
-            {
+
                     if (operation_status == 2)
                         num = num + float.Parse(label_result.Text);
                     else if (operation_status == 3)
@@ -247,13 +242,11 @@ namespace Calculator_dmg_exe
                     doNUM = false;
                     label_result.Text = num.ToString();
 
-            }
         }
 
         private void btn_minus_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn)
-            {
+
              //   if (operation_status != 0)
                 {
                     changeCOLORS(btn_minus);
@@ -266,13 +259,11 @@ namespace Calculator_dmg_exe
 
                 }
 
-            }
         }
 
         private void btn_multi_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn)
-            {
+
              //   if (operation_status != 0)
                 {
                     changeCOLORS(btn_multi);
@@ -285,13 +276,11 @@ namespace Calculator_dmg_exe
 
                 }
 
-            }
         }
 
         private void btn_dividing_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn)
-            {
+
              //   if (operation_status != 0)
                 {
                     changeCOLORS(btn_dividing);
@@ -304,12 +293,11 @@ namespace Calculator_dmg_exe
 
                 }
 
-            }
         }
         bool theDOT = false;
         private void btn_dot_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn && !stooop)
+            if (!stooop)
                 //label_result.Text = ((iosButtons)sender).Text;
                 if (!theDOT)
                 {
@@ -334,24 +322,20 @@ namespace Calculator_dmg_exe
 
         private void btn_remainder_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn)
-            {
+
                 if(float.Parse( label_result.Text) != 0)
                 {
                     num = float.Parse(label_result.Text) / 100;
                     label_result.Text = num.ToString();
                 }
 
-            }
         }
 
         private void btn_mins_plus_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn)
-            {
+
                 num = float.Parse(label_result.Text) *(- 1);
                 label_result.Text = num.ToString();
-            }
         }
 
 

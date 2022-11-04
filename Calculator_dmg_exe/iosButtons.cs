@@ -107,20 +107,10 @@ namespace Calculator_dmg_exe
 
 
 
-
-
-
-
-
         public iosButtons()
         {
             InitializeComponent();
         }
-
-
-        bool nn = true;
-        bool nnok = false;
-
 
 
 
@@ -131,44 +121,14 @@ namespace Calculator_dmg_exe
             this.OnClick(e);
         }
 
-        private void lblTXT_MouseDown(object sender, MouseEventArgs e)
-        {
-
-            if (e.Button == MouseButtons.Left && e.Clicks == 1)
-            {
-
-            }
-            nnok = true;
-            (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseDown(sender, null);
-            lblTXT.ForeColor = SystemColors.ControlLightLight;
-        }
-
-        private void lblTXT_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (nnok)
-            {
-                (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseMove(sender, null);
-                nn = false;
-            }
-        }
-
         private void lblTXT_MouseUp(object sender, MouseEventArgs e)
         {
             OnMouseUp(e);
-
-            nnok = false;
-            nn = true;
-            (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseUp(sender, null);
-            
 
         }
 
         private void iosButtons_Click(object sender, EventArgs e)
         {
-            if (nn)
-            {
-
-            }
             //MessageBox.Show("hey from btn");
         }
     }
