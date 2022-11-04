@@ -29,6 +29,7 @@ namespace Calculator_dmg_exe
         {
             InitializeComponent();
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
+            SetStyle(ControlStyles.StandardDoubleClick, false);
 
         }
 
@@ -116,12 +117,44 @@ namespace Calculator_dmg_exe
         }
 
         bool nn = true;
+
+        private void label_result_TextChanged(object sender, EventArgs e)
+        {
+            if(label_result.Text.Length>10)
+                label_result.Font = new System.Drawing.Font(label_result.Font.Name, 18F);
+        }
+
+        private void label_result_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(label_result.Font+"");
+        }
+
+
+
+
+
+
+
+
+
+        private void btn_zero_MouseUp(object sender, MouseEventArgs e)
+        {
+            
+            if (nn)
+                label_result.Text += ((iosButtons)sender).Text;
+
+        }
+
+        private void btn_zero_Click(object sender, EventArgs e)
+        {
+            //if (nn)
+              //  label_result.Text += ((iosButtons)sender).Text;
+        }
+
+
         //if (nn)
         //this code inside click action of buttons
 
-        private void iosButtons17_Click_1(object sender, EventArgs e)
-        {
 
-        }
     }
 }

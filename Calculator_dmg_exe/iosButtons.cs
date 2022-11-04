@@ -154,16 +154,22 @@ namespace Calculator_dmg_exe
 
         private void lblTXT_MouseUp(object sender, MouseEventArgs e)
         {
+            OnMouseUp(e);
+
             nnok = false;
             nn = true;
             (Application.OpenForms["CalculatorForm"] as CalculatorForm).panel_result_MouseUp(sender, null);
+            
 
         }
 
         private void iosButtons_Click(object sender, EventArgs e)
         {
-            if(nn)
-            MessageBox.Show("hey from btn");
+            if (nn)
+            {
+
+            }
+            //MessageBox.Show("hey from btn");
         }
     }
 }

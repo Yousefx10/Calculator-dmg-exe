@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel_result = new System.Windows.Forms.Panel();
+            this.label_result = new System.Windows.Forms.Label();
+            this.navButtons1 = new Calculator_dmg_exe.navButtons();
             this.btn_ac = new Calculator_dmg_exe.iosButtons();
             this.btn_mins_plus = new Calculator_dmg_exe.iosButtons();
             this.btn_remainder = new Calculator_dmg_exe.iosButtons();
@@ -48,9 +51,6 @@
             this.btn_zero = new Calculator_dmg_exe.iosButtons();
             this.btn_dot = new Calculator_dmg_exe.iosButtons();
             this.btn_equal = new Calculator_dmg_exe.iosButtons();
-            this.panel_result = new System.Windows.Forms.Panel();
-            this.navButtons1 = new Calculator_dmg_exe.navButtons();
-            this.label_result = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel_result.SuspendLayout();
             this.SuspendLayout();
@@ -81,6 +81,44 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(241, 296);
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // panel_result
+            // 
+            this.panel_result.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
+            this.panel_result.Controls.Add(this.navButtons1);
+            this.panel_result.Controls.Add(this.label_result);
+            this.panel_result.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_result.Location = new System.Drawing.Point(0, -4);
+            this.panel_result.Name = "panel_result";
+            this.panel_result.Size = new System.Drawing.Size(241, 84);
+            this.panel_result.TabIndex = 1;
+            this.panel_result.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseDown);
+            this.panel_result.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseMove);
+            this.panel_result.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseUp);
+            // 
+            // label_result
+            // 
+            this.label_result.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_result.ForeColor = System.Drawing.Color.White;
+            this.label_result.Location = new System.Drawing.Point(0, 37);
+            this.label_result.Name = "label_result";
+            this.label_result.Size = new System.Drawing.Size(241, 47);
+            this.label_result.TabIndex = 0;
+            this.label_result.Text = "--";
+            this.label_result.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label_result.TextChanged += new System.EventHandler(this.label_result_TextChanged);
+            this.label_result.Click += new System.EventHandler(this.label_result_Click);
+            this.label_result.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseDown);
+            this.label_result.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseMove);
+            this.label_result.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseUp);
+            // 
+            // navButtons1
+            // 
+            this.navButtons1.Location = new System.Drawing.Point(8, 7);
+            this.navButtons1.Name = "navButtons1";
+            this.navButtons1.Size = new System.Drawing.Size(75, 23);
+            this.navButtons1.TabIndex = 1;
             // 
             // btn_ac
             // 
@@ -147,6 +185,7 @@
             this.btn_seven.Size = new System.Drawing.Size(60, 60);
             this.btn_seven.TabIndex = 4;
             this.btn_seven.Text = "7";
+            this.btn_seven.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
             // 
             // btn_eight
             // 
@@ -160,6 +199,7 @@
             this.btn_eight.Size = new System.Drawing.Size(60, 60);
             this.btn_eight.TabIndex = 5;
             this.btn_eight.Text = "8";
+            this.btn_eight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
             // 
             // btn_nine
             // 
@@ -173,6 +213,7 @@
             this.btn_nine.Size = new System.Drawing.Size(60, 60);
             this.btn_nine.TabIndex = 6;
             this.btn_nine.Text = "9";
+            this.btn_nine.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
             // 
             // btn_multi
             // 
@@ -200,6 +241,7 @@
             this.btn_four.Size = new System.Drawing.Size(60, 60);
             this.btn_four.TabIndex = 8;
             this.btn_four.Text = "4";
+            this.btn_four.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
             // 
             // ftn_five
             // 
@@ -213,6 +255,7 @@
             this.ftn_five.Size = new System.Drawing.Size(60, 60);
             this.ftn_five.TabIndex = 9;
             this.ftn_five.Text = "5";
+            this.ftn_five.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
             // 
             // btn_six
             // 
@@ -226,6 +269,7 @@
             this.btn_six.Size = new System.Drawing.Size(60, 60);
             this.btn_six.TabIndex = 10;
             this.btn_six.Text = "6";
+            this.btn_six.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
             // 
             // btn_minus
             // 
@@ -253,6 +297,7 @@
             this.btn_one.Size = new System.Drawing.Size(60, 60);
             this.btn_one.TabIndex = 12;
             this.btn_one.Text = "1";
+            this.btn_one.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
             // 
             // btn_two
             // 
@@ -266,6 +311,7 @@
             this.btn_two.Size = new System.Drawing.Size(60, 60);
             this.btn_two.TabIndex = 13;
             this.btn_two.Text = "2";
+            this.btn_two.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
             // 
             // btn_three
             // 
@@ -279,6 +325,7 @@
             this.btn_three.Size = new System.Drawing.Size(60, 60);
             this.btn_three.TabIndex = 14;
             this.btn_three.Text = "3";
+            this.btn_three.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
             // 
             // btn_plus
             // 
@@ -306,6 +353,7 @@
             this.btn_zero.Size = new System.Drawing.Size(120, 60);
             this.btn_zero.TabIndex = 16;
             this.btn_zero.Text = "0";
+            this.btn_zero.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
             // 
             // btn_dot
             // 
@@ -333,39 +381,6 @@
             this.btn_equal.Size = new System.Drawing.Size(60, 60);
             this.btn_equal.TabIndex = 18;
             this.btn_equal.Text = "=";
-            // 
-            // panel_result
-            // 
-            this.panel_result.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
-            this.panel_result.Controls.Add(this.navButtons1);
-            this.panel_result.Controls.Add(this.label_result);
-            this.panel_result.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_result.Location = new System.Drawing.Point(0, -4);
-            this.panel_result.Name = "panel_result";
-            this.panel_result.Size = new System.Drawing.Size(241, 84);
-            this.panel_result.TabIndex = 1;
-            this.panel_result.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseDown);
-            this.panel_result.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseMove);
-            this.panel_result.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseUp);
-            // 
-            // navButtons1
-            // 
-            this.navButtons1.Location = new System.Drawing.Point(8, 7);
-            this.navButtons1.Name = "navButtons1";
-            this.navButtons1.Size = new System.Drawing.Size(75, 23);
-            this.navButtons1.TabIndex = 1;
-            // 
-            // label_result
-            // 
-            this.label_result.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_result.ForeColor = System.Drawing.Color.White;
-            this.label_result.Location = new System.Drawing.Point(0, 37);
-            this.label_result.Name = "label_result";
-            this.label_result.Size = new System.Drawing.Size(241, 47);
-            this.label_result.TabIndex = 0;
-            this.label_result.Text = "1234567890";
-            this.label_result.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CalculatorForm
             // 
