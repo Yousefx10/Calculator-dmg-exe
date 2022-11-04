@@ -316,24 +316,26 @@ namespace Calculator_dmg_exe
                       else*/
 
                     if (!label_result.Text.Contains("E"))
-
-                    if (!OPclicked)
                     {
+                        if (!OPclicked)
+                        {
 
-                        label_result.Text += ".";
+                            label_result.Text += ".";
 
-                        if (operation_status == 0)
-                            operation_status++;
+                            if (operation_status == 0)
+                                operation_status++;
 
+                        }
+                        else
+                        {
+                            label_result.Text = "0.";
+                            OPclicked = false;
+                        }
+                        theDOT = true;
+                        doNUM = true;
+                        changeCOLORS(btn_equal, false);
                     }
-                    else
-                    {
-                        label_result.Text = "0.";
-                        OPclicked = false;
-                    }
-                    theDOT = true;
-                    doNUM = true;
-                    changeCOLORS(btn_equal, false);
+
 
                 }
 
