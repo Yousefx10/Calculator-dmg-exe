@@ -162,13 +162,20 @@ namespace Calculator_dmg_exe
 
             if (nn && !stooop)
                 if (doNUM)
-                label_result.Text += ((iosButtons)sender).Text;
+                    label_result.Text += ((iosButtons)sender).Text;
+                else if (OPclicked)
+                {
+                    OPclicked = false;
+                    label_result.Text = "0";
+                }
+                    
 
         }
 
         private void btn_one_MouseUp(object sender, MouseEventArgs e)
         {
             if (nn && !stooop)
+            {
                 if (operation_status == 0)
                 {
                     label_result.Text = ((iosButtons)sender).Text;
@@ -176,14 +183,16 @@ namespace Calculator_dmg_exe
                     doNUM = true;
                 }
 
-                else if(doNUM)
+                else if (doNUM)
                     label_result.Text += ((iosButtons)sender).Text;
                 else
                 {
                     doNUM = true;
                     label_result.Text = ((iosButtons)sender).Text;
                 }
-            changeCOLORS(btn_equal, false);
+                changeCOLORS(btn_equal, false);
+            }
+
 
 
         }
@@ -302,16 +311,23 @@ namespace Calculator_dmg_exe
             if (nn && !stooop)
                 //label_result.Text = ((iosButtons)sender).Text;
                 if (!theDOT)
-            {
-                    if(OPclicked)
-                    label_result.Text = "0.";
-                    else
-                    label_result.Text += ".";
-                    theDOT = true;
-                    doNUM = true;
-                    changeCOLORS(btn_equal, false);
+                {
+                    /*  if(OPclicked)
+                      label_result.Text = "0.";
+                      else*/
+                    if (!OPclicked)
+                    {
+                        label_result.Text += ".";
 
-            }
+                        if (operation_status == 0)
+                            operation_status++;
+
+                        theDOT = true;
+                        doNUM = true;
+                        changeCOLORS(btn_equal, false);
+                    }
+
+                }
 
         }
 
