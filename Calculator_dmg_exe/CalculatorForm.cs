@@ -120,14 +120,17 @@ namespace Calculator_dmg_exe
 
         private void label_result_TextChanged(object sender, EventArgs e)
         {
-            if(label_result.Text.Length>10)
-                label_result.Font = new System.Drawing.Font(label_result.Font.Name, 18F);
+            if(label_result.Text.Length>11)
+                label_result.Font = new System.Drawing.Font(label_result.Font.Name, 20F);
+            else if(label_result.Text.Length > 9)
+                label_result.Font = new System.Drawing.Font(label_result.Font.Name, 25F);
+            else
+                label_result.Font = new System.Drawing.Font(label_result.Font.Name, 32);
+
+
+
         }
 
-        private void label_result_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(label_result.Font+"");
-        }
 
         void changeCOLORS(iosButtons bh, bool X =true )
         {

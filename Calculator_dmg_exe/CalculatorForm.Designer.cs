@@ -99,16 +99,15 @@
             // label_result
             // 
             this.label_result.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
             this.label_result.ForeColor = System.Drawing.Color.White;
-            this.label_result.Location = new System.Drawing.Point(0, 37);
+            this.label_result.Location = new System.Drawing.Point(0, 33);
             this.label_result.Name = "label_result";
-            this.label_result.Size = new System.Drawing.Size(241, 47);
+            this.label_result.Size = new System.Drawing.Size(241, 51);
             this.label_result.TabIndex = 0;
             this.label_result.Text = "0";
             this.label_result.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label_result.TextChanged += new System.EventHandler(this.label_result_TextChanged);
-            this.label_result.Click += new System.EventHandler(this.label_result_Click);
             this.label_result.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseDown);
             this.label_result.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseMove);
             this.label_result.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseUp);
