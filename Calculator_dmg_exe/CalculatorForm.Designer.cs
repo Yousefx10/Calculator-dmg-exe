@@ -383,6 +383,7 @@
             this.btn_equal.Size = new System.Drawing.Size(60, 60);
             this.btn_equal.TabIndex = 18;
             this.btn_equal.Text = "=";
+            this.btn_equal.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_equal_MouseUp);
             // 
             // CalculatorForm
             // 

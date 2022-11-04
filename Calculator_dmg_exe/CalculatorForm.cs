@@ -131,18 +131,20 @@ namespace Calculator_dmg_exe
 
 
 
-
+        // 0 = no operate
+        // 1 = hold first num
+        // 2 = SUM
 
 
         int   operation_status = 0;
         float num = 0;
-
+        bool doNUM = false;
 
         private void btn_zero_MouseUp(object sender, MouseEventArgs e)
         {
             
             if (nn)
-                if(operation_status != 0)
+                if(doNUM)
                 label_result.Text += ((iosButtons)sender).Text;
 
         }
@@ -154,10 +156,24 @@ namespace Calculator_dmg_exe
                 {
                     label_result.Text = ((iosButtons)sender).Text;
                     operation_status++;
+                    doNUM = true;
                 }
 
-                else
+                else 
+                    if(doNUM)
                     label_result.Text += ((iosButtons)sender).Text;
+                    else
+                    {
+                        doNUM = true;
+                        label_result.Text = ((iosButtons)sender).Text;
+                    }
+            btn_equal.BackColor= ColorTranslator.FromHtml("#F59E3E");
+            btn_plus.BackColor= ColorTranslator.FromHtml("#F59E3E");
+            btn_minus.BackColor= ColorTranslator.FromHtml("#F59E3E");
+            btn_multi.BackColor= ColorTranslator.FromHtml("#F59E3E");
+            btn_dividing.BackColor= ColorTranslator.FromHtml("#F59E3E");
+
+
         }
 
         private void btn_ac_MouseUp(object sender, MouseEventArgs e)
@@ -175,7 +191,29 @@ namespace Calculator_dmg_exe
         {
             if (nn)
             {
+                if(operation_status != 0)
+                {
+                    btn_plus.BackColor = SystemColors.ActiveBorder;
+                    operation_status = 2;
+                    num = float.Parse(label_result.Text);
+                    doNUM = false;
+                }
 
+            }
+        }
+
+        private void btn_equal_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (nn)
+            {
+                if (operation_status == 2)
+                {
+                    //btn_plus.BackColor = SystemColors.ActiveBorder;
+                    operation_status = 1;
+                    doNUM= false;
+                    num =num + float.Parse(label_result.Text);
+                    label_result.Text = num.ToString();
+                }
 
             }
         }
