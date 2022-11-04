@@ -53,6 +53,9 @@ namespace Calculator_dmg_exe
                 panel_result.Size = new Size(400, 122);
                 navButtons1.Location = new Point(21, 9);
                 CenterToScreen();
+                largeScreenNumber = 10;
+
+                label_result.Height += 18;
             }
             else
             {
@@ -74,11 +77,16 @@ namespace Calculator_dmg_exe
                 panel_result.Size = new Size(241, 84);
 
                 navButtons1.Location = new Point(8,7);
-
+                largeScreenNumber = 0;
+                label_result.Height -= 18;
             }
 
+            //txtNotOver2_TextChanged(sender, e);
+            // label_result.TextChanged(sender, e);
 
 
+
+            label_result_TextChanged(label_result,null);
         }
 
 
@@ -116,15 +124,16 @@ namespace Calculator_dmg_exe
         }
 
         bool stooop=false;
+        int largeScreenNumber = 0;
         private void label_result_TextChanged(object sender, EventArgs e)
         {
 
             if(label_result.Text.Length>11)
-                label_result.Font = new System.Drawing.Font(label_result.Font.Name, 20F);
+                label_result.Font = new System.Drawing.Font(label_result.Font.Name, largeScreenNumber+ 20F);
             else if(label_result.Text.Length > 9)
-                label_result.Font = new System.Drawing.Font(label_result.Font.Name, 25F);
+                label_result.Font = new System.Drawing.Font(label_result.Font.Name, largeScreenNumber + 25F);
             else
-                label_result.Font = new System.Drawing.Font(label_result.Font.Name, 32);
+                label_result.Font = new System.Drawing.Font(label_result.Font.Name, largeScreenNumber + 32);
 
             if (label_result.Text.Length > 14)
             stooop = true;
@@ -347,6 +356,7 @@ namespace Calculator_dmg_exe
                 num = float.Parse(label_result.Text) *(- 1);
                 label_result.Text = num.ToString();
         }
+
 
 
 
