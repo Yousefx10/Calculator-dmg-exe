@@ -160,6 +160,17 @@ namespace Calculator_dmg_exe
                     label_result.Text += ((iosButtons)sender).Text;
         }
 
+        private void btn_ac_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (nn)
+            {
+                label_result.Text ="0";
+                operation_status=0;
+
+            }
+
+        }
+
 
 
         //if (nn)

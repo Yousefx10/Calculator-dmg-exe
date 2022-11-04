@@ -132,6 +132,7 @@
             this.btn_ac.Size = new System.Drawing.Size(60, 60);
             this.btn_ac.TabIndex = 0;
             this.btn_ac.Text = "AC";
+            this.btn_ac.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_ac_MouseUp);
             // 
             // btn_mins_plus
             // 
