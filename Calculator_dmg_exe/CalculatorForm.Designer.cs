@@ -372,6 +372,7 @@
             this.btn_dot.Size = new System.Drawing.Size(60, 60);
             this.btn_dot.TabIndex = 17;
             this.btn_dot.Text = "•";
+            this.btn_dot.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_dot_MouseUp);
             // 
             // btn_equal
             // 

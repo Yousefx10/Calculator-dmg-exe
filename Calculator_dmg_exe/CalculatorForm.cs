@@ -272,6 +272,22 @@ namespace Calculator_dmg_exe
 
             }
         }
+        bool theDOT = false;
+        private void btn_dot_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (nn)
+                    //label_result.Text = ((iosButtons)sender).Text;
+            if(!theDOT)
+            {
+                    theDOT = true;
+                    label_result.Text += ".";
+                    operation_status = 1;
+                    doNUM = true;
+                changeCOLORS(btn_equal, false);
+
+            }
+
+        }
 
 
 
