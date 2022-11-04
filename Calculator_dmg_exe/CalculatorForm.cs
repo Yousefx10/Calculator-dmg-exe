@@ -300,6 +300,15 @@ namespace Calculator_dmg_exe
             }
         }
 
+        private void btn_mins_plus_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (nn)
+            {
+                num = float.Parse(label_result.Text) *(- 1);
+                label_result.Text = num.ToString();
+            }
+        }
+
 
 
         //if (nn)

@@ -146,6 +146,7 @@
             this.btn_mins_plus.Size = new System.Drawing.Size(60, 60);
             this.btn_mins_plus.TabIndex = 1;
             this.btn_mins_plus.Text = "+/-";
+            this.btn_mins_plus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_mins_plus_MouseUp);
             // 
             // btn_remainder
             // 
