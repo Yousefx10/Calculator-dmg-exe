@@ -228,7 +228,7 @@
             this.btn_multi.Name = "btn_multi";
             this.btn_multi.Size = new System.Drawing.Size(60, 60);
             this.btn_multi.TabIndex = 7;
-            this.btn_multi.Text = "x";
+            this.btn_multi.Text = "×";
             // 
             // btn_four
             // 
@@ -341,6 +341,7 @@
             this.btn_plus.Size = new System.Drawing.Size(60, 60);
             this.btn_plus.TabIndex = 15;
             this.btn_plus.Text = "+";
+            this.btn_plus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_plus_MouseUp);
             // 
             // btn_zero
             // 

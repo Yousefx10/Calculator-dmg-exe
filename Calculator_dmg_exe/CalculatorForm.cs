@@ -171,6 +171,15 @@ namespace Calculator_dmg_exe
 
         }
 
+        private void btn_plus_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (nn)
+            {
+
+
+            }
+        }
+
 
 
         //if (nn)
