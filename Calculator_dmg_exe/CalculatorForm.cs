@@ -207,6 +207,7 @@ namespace Calculator_dmg_exe
                 doNUM = false;
                 theDOT = false;
                 stooop = false;
+                OPclicked = false;
             }
 
         }
