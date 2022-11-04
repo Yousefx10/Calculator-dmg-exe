@@ -191,6 +191,7 @@ namespace Calculator_dmg_exe
                 changeCOLORS(btn_equal, false);
             }
 
+            OPclicked = false;
 
 
         }
@@ -304,17 +305,26 @@ namespace Calculator_dmg_exe
                     /*  if(OPclicked)
                       label_result.Text = "0.";
                       else*/
+
+                    if (!label_result.Text.Contains("E"))
+
                     if (!OPclicked)
                     {
+
                         label_result.Text += ".";
 
                         if (operation_status == 0)
                             operation_status++;
 
-                        theDOT = true;
-                        doNUM = true;
-                        changeCOLORS(btn_equal, false);
                     }
+                    else
+                    {
+                        label_result.Text = "0.";
+                        OPclicked = false;
+                    }
+                    theDOT = true;
+                    doNUM = true;
+                    changeCOLORS(btn_equal, false);
 
                 }
 
@@ -350,3 +360,5 @@ namespace Calculator_dmg_exe
 //the font size problem with enable and disable
 //the DOT problem when do [ + - x / ] it don't clear the text if first clicked
 //the first operate with zero
+//Fix [ euler's number - Notation ] with dot error.
+//fix dot with after operator problem
