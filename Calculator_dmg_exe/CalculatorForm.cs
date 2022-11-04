@@ -295,8 +295,12 @@ namespace Calculator_dmg_exe
         {
             if (nn)
             {
-                 num = float.Parse(label_result.Text)/100;
-                label_result.Text = num.ToString();
+                if(float.Parse( label_result.Text) != 0)
+                {
+                    num = float.Parse(label_result.Text) / 100;
+                    label_result.Text = num.ToString();
+                }
+
             }
         }
 
