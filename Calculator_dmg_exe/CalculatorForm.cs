@@ -117,9 +117,10 @@ namespace Calculator_dmg_exe
         }
 
         bool nn = true;
-
+        bool stooop=false;
         private void label_result_TextChanged(object sender, EventArgs e)
         {
+
             if(label_result.Text.Length>11)
                 label_result.Font = new System.Drawing.Font(label_result.Font.Name, 20F);
             else if(label_result.Text.Length > 9)
@@ -127,7 +128,10 @@ namespace Calculator_dmg_exe
             else
                 label_result.Font = new System.Drawing.Font(label_result.Font.Name, 32);
 
-
+            if (label_result.Text.Length > 14)
+            stooop = true;
+            else
+                stooop = false;
 
         }
 
@@ -152,19 +156,19 @@ namespace Calculator_dmg_exe
         int   operation_status = 0;
         float num = 0;
         bool doNUM = false;
-
+        bool OPclicked = false;//check if [+ - x /] are still pressed or no , useful for DOT button.
         private void btn_zero_MouseUp(object sender, MouseEventArgs e)
         {
-            
-            if (nn)
-                if(doNUM)
+
+            if (nn && !stooop)
+                if (doNUM)
                 label_result.Text += ((iosButtons)sender).Text;
 
         }
 
         private void btn_one_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn)
+            if (nn && !stooop)
                 if (operation_status == 0)
                 {
                     label_result.Text = ((iosButtons)sender).Text;
@@ -193,6 +197,7 @@ namespace Calculator_dmg_exe
                 changeCOLORS(btn_equal, false);
                 doNUM = false;
                 theDOT = false;
+                stooop = false;
             }
 
         }
@@ -201,12 +206,15 @@ namespace Calculator_dmg_exe
         {
             if (nn)
             {
-                if(operation_status != 0)
+                //if(operation_status != 0)
                 {
                     changeCOLORS(btn_plus);
                     operation_status = 2;
                     num = float.Parse(label_result.Text);
                     doNUM = false;
+                    theDOT = false;
+                    stooop=false;
+                    OPclicked = true;
                 }
 
             }
@@ -236,12 +244,16 @@ namespace Calculator_dmg_exe
         {
             if (nn)
             {
-                if (operation_status != 0)
+             //   if (operation_status != 0)
                 {
                     changeCOLORS(btn_minus);
                     operation_status = 3;
                     num = float.Parse(label_result.Text);
                     doNUM = false;
+                    theDOT = false;
+                    stooop = false;
+                    OPclicked = true;
+
                 }
 
             }
@@ -251,12 +263,16 @@ namespace Calculator_dmg_exe
         {
             if (nn)
             {
-                if (operation_status != 0)
+             //   if (operation_status != 0)
                 {
                     changeCOLORS(btn_multi);
                     operation_status = 4;
                     num = float.Parse(label_result.Text);
                     doNUM = false;
+                    theDOT = false;
+                    stooop = false;
+                    OPclicked = true;
+
                 }
 
             }
@@ -266,12 +282,16 @@ namespace Calculator_dmg_exe
         {
             if (nn)
             {
-                if (operation_status != 0)
+             //   if (operation_status != 0)
                 {
                     changeCOLORS(btn_dividing);
                     operation_status = 5;
                     num = float.Parse(label_result.Text);
                     doNUM = false;
+                    theDOT = false;
+                    stooop = false;
+                    OPclicked = true;
+
                 }
 
             }
@@ -279,15 +299,17 @@ namespace Calculator_dmg_exe
         bool theDOT = false;
         private void btn_dot_MouseUp(object sender, MouseEventArgs e)
         {
-            if (nn)
-                    //label_result.Text = ((iosButtons)sender).Text;
-            if(!theDOT)
+            if (nn && !stooop)
+                //label_result.Text = ((iosButtons)sender).Text;
+                if (!theDOT)
             {
-                    theDOT = true;
+                    if(OPclicked)
+                    label_result.Text = "0.";
+                    else
                     label_result.Text += ".";
-                    operation_status = 1;
+                    theDOT = true;
                     doNUM = true;
-                changeCOLORS(btn_equal, false);
+                    changeCOLORS(btn_equal, false);
 
             }
 
@@ -323,3 +345,7 @@ namespace Calculator_dmg_exe
 
     }
 }
+//notes section :
+//the font size problem with enable and disable
+//the DOT problem when do [ + - x / ] it don't clear the text if first clicked
+//the first operate with zero
