@@ -201,7 +201,7 @@ namespace Calculator_dmg_exe
             {
                 if(operation_status != 0)
                 {
-                    btn_plus.BackColor = SystemColors.ActiveBorder;
+                    changeCOLORS(btn_plus);
                     operation_status = 2;
                     num = float.Parse(label_result.Text);
                     doNUM = false;
