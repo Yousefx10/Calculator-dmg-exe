@@ -285,6 +285,7 @@
             this.btn_minus.Size = new System.Drawing.Size(60, 60);
             this.btn_minus.TabIndex = 11;
             this.btn_minus.Text = "—";
+            this.btn_minus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_minus_MouseUp);
             // 
             // btn_one
             // 

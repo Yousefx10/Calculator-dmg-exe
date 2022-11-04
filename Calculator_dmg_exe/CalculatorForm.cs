@@ -129,7 +129,17 @@ namespace Calculator_dmg_exe
             MessageBox.Show(label_result.Font+"");
         }
 
+        void changeCOLORS(iosButtons bh, bool X =true )
+        {
+            
+            btn_plus.BackColor = ColorTranslator.FromHtml("#F59E3E");
+            btn_minus.BackColor = ColorTranslator.FromHtml("#F59E3E");
+            btn_multi.BackColor = ColorTranslator.FromHtml("#F59E3E");
+            btn_dividing.BackColor = ColorTranslator.FromHtml("#F59E3E");
+            if(X)
+            bh.BackColor = SystemColors.ActiveBorder;
 
+        }
 
         // 0 = no operate
         // 1 = hold first num
@@ -167,11 +177,7 @@ namespace Calculator_dmg_exe
                         doNUM = true;
                         label_result.Text = ((iosButtons)sender).Text;
                     }
-            btn_equal.BackColor= ColorTranslator.FromHtml("#F59E3E");
-            btn_plus.BackColor= ColorTranslator.FromHtml("#F59E3E");
-            btn_minus.BackColor= ColorTranslator.FromHtml("#F59E3E");
-            btn_multi.BackColor= ColorTranslator.FromHtml("#F59E3E");
-            btn_dividing.BackColor= ColorTranslator.FromHtml("#F59E3E");
+            changeCOLORS(btn_equal, false);
 
 
         }
@@ -182,7 +188,7 @@ namespace Calculator_dmg_exe
             {
                 label_result.Text ="0";
                 operation_status=0;
-
+                changeCOLORS(btn_equal, false);
             }
 
         }
@@ -207,12 +213,28 @@ namespace Calculator_dmg_exe
             if (nn)
             {
                 if (operation_status == 2)
+                    num = num + float.Parse(label_result.Text);
+                else if(operation_status == 3)
+                    num = num - float.Parse(label_result.Text);
+
+
+                changeCOLORS(btn_equal, false);
+                operation_status = 1;
+                doNUM = false;
+                label_result.Text = num.ToString();
+            }
+        }
+
+        private void btn_minus_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (nn)
+            {
+                if (operation_status != 0)
                 {
-                    //btn_plus.BackColor = SystemColors.ActiveBorder;
-                    operation_status = 1;
-                    doNUM= false;
-                    num =num + float.Parse(label_result.Text);
-                    label_result.Text = num.ToString();
+                    changeCOLORS(btn_minus);
+                    operation_status = 3;
+                    num = float.Parse(label_result.Text);
+                    doNUM = false;
                 }
 
             }
