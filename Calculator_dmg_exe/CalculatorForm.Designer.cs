@@ -159,6 +159,7 @@
             this.btn_remainder.Size = new System.Drawing.Size(60, 60);
             this.btn_remainder.TabIndex = 2;
             this.btn_remainder.Text = "%";
+            this.btn_remainder.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_remainder_MouseUp);
             // 
             // btn_dividing
             // 

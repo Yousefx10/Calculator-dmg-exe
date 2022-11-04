@@ -189,6 +189,8 @@ namespace Calculator_dmg_exe
                 label_result.Text ="0";
                 operation_status=0;
                 changeCOLORS(btn_equal, false);
+                doNUM = false;
+                theDOT = false;
             }
 
         }
@@ -287,6 +289,15 @@ namespace Calculator_dmg_exe
 
             }
 
+        }
+
+        private void btn_remainder_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (nn)
+            {
+                 num = float.Parse(label_result.Text)/100;
+                label_result.Text = num.ToString();
+            }
         }
 
 
