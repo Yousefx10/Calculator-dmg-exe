@@ -134,22 +134,32 @@ namespace Calculator_dmg_exe
 
 
 
-
+        int   operation_status = 0;
+        float num = 0;
 
 
         private void btn_zero_MouseUp(object sender, MouseEventArgs e)
         {
             
             if (nn)
+                if(operation_status != 0)
                 label_result.Text += ((iosButtons)sender).Text;
 
         }
 
-        private void btn_zero_Click(object sender, EventArgs e)
+        private void btn_one_MouseUp(object sender, MouseEventArgs e)
         {
-            //if (nn)
-              //  label_result.Text += ((iosButtons)sender).Text;
+            if (nn)
+                if (operation_status == 0)
+                {
+                    label_result.Text = ((iosButtons)sender).Text;
+                    operation_status++;
+                }
+
+                else
+                    label_result.Text += ((iosButtons)sender).Text;
         }
+
 
 
         //if (nn)

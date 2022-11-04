@@ -105,7 +105,7 @@
             this.label_result.Name = "label_result";
             this.label_result.Size = new System.Drawing.Size(241, 47);
             this.label_result.TabIndex = 0;
-            this.label_result.Text = "--";
+            this.label_result.Text = "0";
             this.label_result.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label_result.TextChanged += new System.EventHandler(this.label_result_TextChanged);
             this.label_result.Click += new System.EventHandler(this.label_result_Click);
@@ -185,7 +185,7 @@
             this.btn_seven.Size = new System.Drawing.Size(60, 60);
             this.btn_seven.TabIndex = 4;
             this.btn_seven.Text = "7";
-            this.btn_seven.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
+            this.btn_seven.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
             // 
             // btn_eight
             // 
@@ -199,7 +199,7 @@
             this.btn_eight.Size = new System.Drawing.Size(60, 60);
             this.btn_eight.TabIndex = 5;
             this.btn_eight.Text = "8";
-            this.btn_eight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
+            this.btn_eight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
             // 
             // btn_nine
             // 
@@ -213,7 +213,7 @@
             this.btn_nine.Size = new System.Drawing.Size(60, 60);
             this.btn_nine.TabIndex = 6;
             this.btn_nine.Text = "9";
-            this.btn_nine.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
+            this.btn_nine.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
             // 
             // btn_multi
             // 
@@ -241,7 +241,7 @@
             this.btn_four.Size = new System.Drawing.Size(60, 60);
             this.btn_four.TabIndex = 8;
             this.btn_four.Text = "4";
-            this.btn_four.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
+            this.btn_four.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
             // 
             // ftn_five
             // 
@@ -255,7 +255,7 @@
             this.ftn_five.Size = new System.Drawing.Size(60, 60);
             this.ftn_five.TabIndex = 9;
             this.ftn_five.Text = "5";
-            this.ftn_five.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
+            this.ftn_five.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
             // 
             // btn_six
             // 
@@ -269,7 +269,7 @@
             this.btn_six.Size = new System.Drawing.Size(60, 60);
             this.btn_six.TabIndex = 10;
             this.btn_six.Text = "6";
-            this.btn_six.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
+            this.btn_six.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
             // 
             // btn_minus
             // 
@@ -297,7 +297,7 @@
             this.btn_one.Size = new System.Drawing.Size(60, 60);
             this.btn_one.TabIndex = 12;
             this.btn_one.Text = "1";
-            this.btn_one.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
+            this.btn_one.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
             // 
             // btn_two
             // 
@@ -311,7 +311,7 @@
             this.btn_two.Size = new System.Drawing.Size(60, 60);
             this.btn_two.TabIndex = 13;
             this.btn_two.Text = "2";
-            this.btn_two.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
+            this.btn_two.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
             // 
             // btn_three
             // 
@@ -325,7 +325,7 @@
             this.btn_three.Size = new System.Drawing.Size(60, 60);
             this.btn_three.TabIndex = 14;
             this.btn_three.Text = "3";
-            this.btn_three.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_zero_MouseUp);
+            this.btn_three.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
             // 
             // btn_plus
             // 
