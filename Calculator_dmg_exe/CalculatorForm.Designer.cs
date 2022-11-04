@@ -173,6 +173,7 @@
             this.btn_dividing.Size = new System.Drawing.Size(60, 60);
             this.btn_dividing.TabIndex = 3;
             this.btn_dividing.Text = "÷";
+            this.btn_dividing.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_dividing_MouseUp);
             // 
             // btn_seven
             // 
@@ -229,6 +230,7 @@
             this.btn_multi.Size = new System.Drawing.Size(60, 60);
             this.btn_multi.TabIndex = 7;
             this.btn_multi.Text = "×";
+            this.btn_multi.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_multi_MouseUp);
             // 
             // btn_four
             // 

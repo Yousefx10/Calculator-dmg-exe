@@ -214,9 +214,12 @@ namespace Calculator_dmg_exe
             {
                 if (operation_status == 2)
                     num = num + float.Parse(label_result.Text);
-                else if(operation_status == 3)
+                else if (operation_status == 3)
                     num = num - float.Parse(label_result.Text);
-
+                else if (operation_status == 4)
+                    num = num * float.Parse(label_result.Text);
+                else if (operation_status == 5)
+                    num = num / float.Parse(label_result.Text);
 
                 changeCOLORS(btn_equal, false);
                 operation_status = 1;
@@ -233,6 +236,36 @@ namespace Calculator_dmg_exe
                 {
                     changeCOLORS(btn_minus);
                     operation_status = 3;
+                    num = float.Parse(label_result.Text);
+                    doNUM = false;
+                }
+
+            }
+        }
+
+        private void btn_multi_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (nn)
+            {
+                if (operation_status != 0)
+                {
+                    changeCOLORS(btn_multi);
+                    operation_status = 4;
+                    num = float.Parse(label_result.Text);
+                    doNUM = false;
+                }
+
+            }
+        }
+
+        private void btn_dividing_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (nn)
+            {
+                if (operation_status != 0)
+                {
+                    changeCOLORS(btn_dividing);
+                    operation_status = 5;
                     num = float.Parse(label_result.Text);
                     doNUM = false;
                 }
