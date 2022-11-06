@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalculatorForm));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel_result = new System.Windows.Forms.Panel();
+            this.label_result = new System.Windows.Forms.Label();
+            this.navButtons1 = new Calculator_dmg_exe.navButtons();
             this.btn_ac = new Calculator_dmg_exe.iosButtons();
             this.btn_mins_plus = new Calculator_dmg_exe.iosButtons();
             this.btn_remainder = new Calculator_dmg_exe.iosButtons();
@@ -48,9 +52,6 @@
             this.btn_zero = new Calculator_dmg_exe.iosButtons();
             this.btn_dot = new Calculator_dmg_exe.iosButtons();
             this.btn_equal = new Calculator_dmg_exe.iosButtons();
-            this.panel_result = new System.Windows.Forms.Panel();
-            this.navButtons1 = new Calculator_dmg_exe.navButtons();
-            this.label_result = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel_result.SuspendLayout();
             this.SuspendLayout();
@@ -81,6 +82,43 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(241, 296);
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // panel_result
+            // 
+            this.panel_result.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
+            this.panel_result.Controls.Add(this.navButtons1);
+            this.panel_result.Controls.Add(this.label_result);
+            this.panel_result.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_result.Location = new System.Drawing.Point(0, -4);
+            this.panel_result.Name = "panel_result";
+            this.panel_result.Size = new System.Drawing.Size(241, 84);
+            this.panel_result.TabIndex = 1;
+            this.panel_result.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseDown);
+            this.panel_result.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseMove);
+            this.panel_result.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseUp);
+            // 
+            // label_result
+            // 
+            this.label_result.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
+            this.label_result.ForeColor = System.Drawing.Color.White;
+            this.label_result.Location = new System.Drawing.Point(0, 33);
+            this.label_result.Name = "label_result";
+            this.label_result.Size = new System.Drawing.Size(241, 51);
+            this.label_result.TabIndex = 0;
+            this.label_result.Text = "0";
+            this.label_result.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label_result.TextChanged += new System.EventHandler(this.label_result_TextChanged);
+            this.label_result.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseDown);
+            this.label_result.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseMove);
+            this.label_result.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseUp);
+            // 
+            // navButtons1
+            // 
+            this.navButtons1.Location = new System.Drawing.Point(8, 7);
+            this.navButtons1.Name = "navButtons1";
+            this.navButtons1.Size = new System.Drawing.Size(75, 23);
+            this.navButtons1.TabIndex = 1;
             // 
             // btn_ac
             // 
@@ -353,43 +391,6 @@
             this.btn_equal.Text = "=";
             this.btn_equal.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_equal_MouseUp);
             // 
-            // panel_result
-            // 
-            this.panel_result.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
-            this.panel_result.Controls.Add(this.navButtons1);
-            this.panel_result.Controls.Add(this.label_result);
-            this.panel_result.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_result.Location = new System.Drawing.Point(0, -4);
-            this.panel_result.Name = "panel_result";
-            this.panel_result.Size = new System.Drawing.Size(241, 84);
-            this.panel_result.TabIndex = 1;
-            this.panel_result.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseDown);
-            this.panel_result.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseMove);
-            this.panel_result.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseUp);
-            // 
-            // navButtons1
-            // 
-            this.navButtons1.Location = new System.Drawing.Point(8, 7);
-            this.navButtons1.Name = "navButtons1";
-            this.navButtons1.Size = new System.Drawing.Size(75, 23);
-            this.navButtons1.TabIndex = 1;
-            // 
-            // label_result
-            // 
-            this.label_result.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
-            this.label_result.ForeColor = System.Drawing.Color.White;
-            this.label_result.Location = new System.Drawing.Point(0, 33);
-            this.label_result.Name = "label_result";
-            this.label_result.Size = new System.Drawing.Size(241, 51);
-            this.label_result.TabIndex = 0;
-            this.label_result.Text = "0";
-            this.label_result.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label_result.TextChanged += new System.EventHandler(this.label_result_TextChanged);
-            this.label_result.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseDown);
-            this.label_result.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseMove);
-            this.label_result.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_result_MouseUp);
-            // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,6 +400,7 @@
             this.Controls.Add(this.panel_result);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CalculatorForm";

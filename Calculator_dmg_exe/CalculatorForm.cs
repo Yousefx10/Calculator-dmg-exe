@@ -215,7 +215,7 @@ namespace Calculator_dmg_exe
                 operation_status=0;
                 changeCOLORS(btn_equal, false);
                 doNUM = false;
-                //theDOT = false;
+                theDOT = false;
                 stooop = false;
                 OPclicked = false;
 
