@@ -169,13 +169,15 @@ namespace Calculator_dmg_exe
 
             if (!stooop)
                 if (doNUM)
-                    label_result.Text += ((iosButtons)sender).Text;
+                    label_result.Text += "0";
                 else if (OPclicked)
                 {
                     OPclicked = false;
                     label_result.Text = "0";
+                                theDOT = false;
                 }
-                    
+
+
 
         }
 
@@ -195,6 +197,7 @@ namespace Calculator_dmg_exe
                 else
                 {
                     doNUM = true;
+                    theDOT = false;
                     label_result.Text = ((iosButtons)sender).Text;
                 }
                 changeCOLORS(btn_equal, false);
@@ -212,7 +215,7 @@ namespace Calculator_dmg_exe
                 operation_status=0;
                 changeCOLORS(btn_equal, false);
                 doNUM = false;
-                theDOT = false;
+                //theDOT = false;
                 stooop = false;
                 OPclicked = false;
 
@@ -228,7 +231,7 @@ namespace Calculator_dmg_exe
                     operation_status = 2;
                     num = float.Parse(label_result.Text);
                     doNUM = false;
-                    theDOT = false;
+                    //theDOT = false;
                     stooop=false;
                     OPclicked = true;
                 }
@@ -247,9 +250,11 @@ namespace Calculator_dmg_exe
                     else if (operation_status == 5)
                         num = num / float.Parse(label_result.Text);
                     else { return; }
+
                     changeCOLORS(btn_equal, false);
                     operation_status = 1;
                     doNUM = false;
+                    theDOT = true;
                     label_result.Text = num.ToString();
 
         }
@@ -263,7 +268,7 @@ namespace Calculator_dmg_exe
                     operation_status = 3;
                     num = float.Parse(label_result.Text);
                     doNUM = false;
-                    theDOT = false;
+                    //theDOT = false;
                     stooop = false;
                     OPclicked = true;
 
@@ -280,7 +285,7 @@ namespace Calculator_dmg_exe
                     operation_status = 4;
                     num = float.Parse(label_result.Text);
                     doNUM = false;
-                    theDOT = false;
+                    //theDOT = false;
                     stooop = false;
                     OPclicked = true;
 
@@ -297,7 +302,7 @@ namespace Calculator_dmg_exe
                     operation_status = 5;
                     num = float.Parse(label_result.Text);
                     doNUM = false;
-                    theDOT = false;
+                    //theDOT = false;
                     stooop = false;
                     OPclicked = true;
 
@@ -307,23 +312,27 @@ namespace Calculator_dmg_exe
         bool theDOT = false;
         private void btn_dot_MouseUp(object sender, MouseEventArgs e)
         {
+
+            /*
+             
             if (!stooop)
                 //label_result.Text = ((iosButtons)sender).Text;
                 if (!theDOT)
                 {
-                    /*  if(OPclicked)
-                      label_result.Text = "0.";
-                      else*/
-
-                    if (!label_result.Text.Contains("E"))
-                    {
+                    //  if(OPclicked)
+                      //label_result.Text = "0.";
+                      else
+                    
                         if (!OPclicked)
                         {
+                            if (!label_result.Text.Contains("E"))
+                            {
+                                label_result.Text += ".";
 
-                            label_result.Text += ".";
+                                if (operation_status == 0)
+                                    operation_status++;
+                            }
 
-                            if (operation_status == 0)
-                                operation_status++;
 
                         }
                         else
@@ -334,10 +343,42 @@ namespace Calculator_dmg_exe
                         theDOT = true;
                         doNUM = true;
                         changeCOLORS(btn_equal, false);
-                    }
+                    
 
 
                 }
+        */
+
+            if (!stooop)
+            {
+                if(theDOT==false)
+                {
+                    if (!label_result.Text.Contains("."))
+                    {
+                        if (!label_result.Text.Contains("E"))
+                        {
+
+                            label_result.Text += ".";
+                            doNUM = true;
+                            if(operation_status == 0)
+                                operation_status=1;
+                        }
+
+                    }
+
+                }
+                else
+                {
+                    label_result.Text = "0.";
+                    theDOT = false;
+                    doNUM = true;
+                }
+
+                changeCOLORS(btn_equal, false);
+                OPclicked = false;
+
+            }
+
 
         }
 
@@ -349,6 +390,8 @@ namespace Calculator_dmg_exe
                     num = float.Parse(label_result.Text) / 100;
                     label_result.Text = num.ToString();
                 }
+            if (label_result.Text.Contains("E"))
+                stooop = true;
 
         }
 
@@ -374,3 +417,8 @@ namespace Calculator_dmg_exe
 //the first operate with zero
 //Fix [ euler's number - Notation ] with dot error.
 //fix dot with after operator problem
+
+
+//TWO MAIN PROBLEMS :
+// WHEN LARGE NUMBER CONTAIN (E) it occur error when add number
+//still period problem if didn't click operator number
