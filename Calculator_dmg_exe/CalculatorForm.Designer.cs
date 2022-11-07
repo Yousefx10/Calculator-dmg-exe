@@ -42,7 +42,7 @@
             this.btn_nine = new Calculator_dmg_exe.iosButtons();
             this.btn_multi = new Calculator_dmg_exe.iosButtons();
             this.btn_four = new Calculator_dmg_exe.iosButtons();
-            this.ftn_five = new Calculator_dmg_exe.iosButtons();
+            this.btn_five = new Calculator_dmg_exe.iosButtons();
             this.btn_six = new Calculator_dmg_exe.iosButtons();
             this.btn_minus = new Calculator_dmg_exe.iosButtons();
             this.btn_one = new Calculator_dmg_exe.iosButtons();
@@ -67,7 +67,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btn_nine);
             this.flowLayoutPanel1.Controls.Add(this.btn_multi);
             this.flowLayoutPanel1.Controls.Add(this.btn_four);
-            this.flowLayoutPanel1.Controls.Add(this.ftn_five);
+            this.flowLayoutPanel1.Controls.Add(this.btn_five);
             this.flowLayoutPanel1.Controls.Add(this.btn_six);
             this.flowLayoutPanel1.Controls.Add(this.btn_minus);
             this.flowLayoutPanel1.Controls.Add(this.btn_one);
@@ -248,19 +248,19 @@
             this.btn_four.Text = "4";
             this.btn_four.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
             // 
-            // ftn_five
+            // btn_five
             // 
-            this.ftn_five.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
-            this.ftn_five.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ftn_five.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
-            this.ftn_five.Location = new System.Drawing.Point(60, 120);
-            this.ftn_five.Margin = new System.Windows.Forms.Padding(0);
-            this.ftn_five.MinimumSize = new System.Drawing.Size(60, 60);
-            this.ftn_five.Name = "ftn_five";
-            this.ftn_five.Size = new System.Drawing.Size(60, 60);
-            this.ftn_five.TabIndex = 9;
-            this.ftn_five.Text = "5";
-            this.ftn_five.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
+            this.btn_five.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.btn_five.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_five.Direction = Calculator_dmg_exe.iosButtons.CollapseDirection.Normal;
+            this.btn_five.Location = new System.Drawing.Point(60, 120);
+            this.btn_five.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_five.MinimumSize = new System.Drawing.Size(60, 60);
+            this.btn_five.Name = "btn_five";
+            this.btn_five.Size = new System.Drawing.Size(60, 60);
+            this.btn_five.TabIndex = 9;
+            this.btn_five.Text = "5";
+            this.btn_five.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_one_MouseUp);
             // 
             // btn_six
             // 
@@ -401,10 +401,12 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CalculatorForm_KeyPress_1);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel_result.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -423,7 +425,7 @@
         private iosButtons btn_nine;
         private iosButtons btn_multi;
         private iosButtons btn_four;
-        private iosButtons ftn_five;
+        private iosButtons btn_five;
         private iosButtons btn_six;
         private iosButtons btn_minus;
         private iosButtons btn_one;

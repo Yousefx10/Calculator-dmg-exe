@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Calculator_dmg_exe
 {
@@ -400,6 +401,38 @@ namespace Calculator_dmg_exe
 
                 num = float.Parse(label_result.Text) *(- 1);
                 label_result.Text = num.ToString();
+        }
+
+
+
+        private void CalculatorForm_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            string oka="";
+            int i=0;
+            if (int.TryParse(e.KeyChar.ToString(), out i))
+            {
+
+                if (i == 0)
+                {
+                    btn_zero_MouseUp("btn_zero", null);
+                    return;
+                }
+                oka = new string[] { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" }[i - 1];
+                iosButtons ioo = ((iosButtons)flowLayoutPanel1.Controls.Find("btn_" + oka, false)[0]);
+
+
+
+                btn_one_MouseUp(ioo, null);
+
+                //iosButtons ioo = ((iosButtons)flowLayoutPanel1.Controls.Find("btn_"+ oka, false)[0]);
+                // MessageBox.Show(oka);
+
+
+            }
+            else if (e.KeyChar == '.')
+            {
+                btn_dot_MouseUp(null, null);
+            }
         }
 
 
