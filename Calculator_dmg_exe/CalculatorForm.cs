@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -408,7 +409,7 @@ namespace Calculator_dmg_exe
         private void CalculatorForm_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             string oka="";
-            int i=0;
+            int i;
             if (int.TryParse(e.KeyChar.ToString(), out i))
             {
 
@@ -432,6 +433,28 @@ namespace Calculator_dmg_exe
             else if (e.KeyChar == '.')
             {
                 btn_dot_MouseUp(null, null);
+            }
+            else
+            {
+
+                switch(e.KeyChar)
+                {
+                    case '+':
+                        btn_plus_MouseUp(null, null);
+                        break;
+                    case '-':
+                        btn_minus_MouseUp(null, null);
+                        break;
+                    case '*':
+                        btn_multi_MouseUp(null, null);
+                        break;
+                    case '/':
+                        btn_dividing_MouseUp(null, null);
+                        break;
+                    case (char)13:
+                        btn_equal_MouseUp(null, null);
+                        break;
+                }
             }
         }
 
