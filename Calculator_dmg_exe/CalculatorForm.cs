@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Calculator_dmg_exe
 {
@@ -453,11 +454,20 @@ namespace Calculator_dmg_exe
                         break;
                     case (char)13:
                         btn_equal_MouseUp(null, null);
+                        break;                    
+                    case (char)8:
+                        if (theDOT == false && label_result.Text.Length > 1)
+                        {
+                                label_result.Text = label_result.Text.Substring(0, (label_result.Text.Length - 1));
+                        }
+                        else
+                        {
+                            btn_ac_MouseUp(null, null);
+                        }
                         break;
                 }
             }
         }
-
 
 
 
