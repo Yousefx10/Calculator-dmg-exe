@@ -493,18 +493,36 @@ namespace Calculator_dmg_exe
             {   
                 timer_mini.Stop();
                 WindowState = FormWindowState.Minimized;
-                Location = beforeMini;
-                counter = 0;
+                //Location = beforeMini;
+                counter = 0; that_coun = true;
             }
         }
 
 
         int counter = 0;
+        bool that_coun = false;
         Point beforeMini = new Point(0, 0);
         public void miniNOW()
         {
             beforeMini = (Location);
             timer_mini.Start();
+        }
+        private void CalculatorForm_Activated(object sender, EventArgs e)
+        {
+            if (that_coun)
+                timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Top -= 25;
+            counter++;
+            if (counter >= 21)
+            {
+                timer1.Stop();
+                counter = 0; 
+                that_coun = false;
+            }
         }
 
 
