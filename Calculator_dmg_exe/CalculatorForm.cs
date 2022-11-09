@@ -491,18 +491,22 @@ namespace Calculator_dmg_exe
             Width -= 5;
             Top += 10;
         }
-
+        Point nod = new Point(0, 0);
         private void label_result_Click(object sender, EventArgs e)
         {
+            nod = (Location);
             timer_mini.Start();
-            //timer_stops.Start();
+            timer_stops.Start();
         }
 
         private void timer_stops_Tick(object sender, EventArgs e)
         {
             timer_mini.Stop();
+            //Hide();
+            Width = 241;
             WindowState = FormWindowState.Minimized;
-            Location= new Point(0, 0);
+            Location = nod;
+            //Location= new Point(0, 0);
             timer_stops.Stop();
         }
 
