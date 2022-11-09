@@ -34,6 +34,7 @@
             this.panel_result = new System.Windows.Forms.Panel();
             this.label_result = new System.Windows.Forms.Label();
             this.timer_mini = new System.Windows.Forms.Timer(this.components);
+            this.timer_max = new System.Windows.Forms.Timer(this.components);
             this.navButtons1 = new Calculator_dmg_exe.navButtons();
             this.btn_ac = new Calculator_dmg_exe.iosButtons();
             this.btn_mins_plus = new Calculator_dmg_exe.iosButtons();
@@ -54,7 +55,6 @@
             this.btn_zero = new Calculator_dmg_exe.iosButtons();
             this.btn_dot = new Calculator_dmg_exe.iosButtons();
             this.btn_equal = new Calculator_dmg_exe.iosButtons();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1.SuspendLayout();
             this.panel_result.SuspendLayout();
             this.SuspendLayout();
@@ -120,6 +120,11 @@
             // 
             this.timer_mini.Interval = 5;
             this.timer_mini.Tick += new System.EventHandler(this.timer_mini_Tick);
+            // 
+            // timer_max
+            // 
+            this.timer_max.Interval = 1;
+            this.timer_max.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // navButtons1
             // 
@@ -418,11 +423,6 @@
             this.btn_equal.Text = "=";
             this.btn_equal.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_equal_MouseUp);
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 5;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,7 +472,7 @@
         private System.Windows.Forms.Label label_result;
         private navButtons navButtons1;
         private System.Windows.Forms.Timer timer_mini;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer_max;
     }
 }
 

@@ -510,7 +510,7 @@ namespace Calculator_dmg_exe
         private void CalculatorForm_Activated(object sender, EventArgs e)
         {
             if (that_coun)
-                timer1.Start();
+                timer_max.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -519,9 +519,10 @@ namespace Calculator_dmg_exe
             counter++;
             if (counter >= 21)
             {
-                timer1.Stop();
+                timer_max.Stop();
                 counter = 0; 
                 that_coun = false;
+                Location = beforeMini;
             }
         }
 
