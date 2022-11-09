@@ -107,6 +107,24 @@ namespace Calculator_dmg_exe
 
 
 
+
+        bool animatenow = false;
+
+
+        [Description("do you want it to animate?!"), Category("Appearance")]
+        public bool Animation
+        {
+            get => animatenow;
+            set => animatenow = value;
+        }
+
+
+
+
+
+
+
+
         public iosButtons()
         {
             InitializeComponent();
@@ -124,14 +142,17 @@ namespace Calculator_dmg_exe
         private void lblTXT_MouseUp(object sender, MouseEventArgs e)
         {
             OnMouseUp(e);
+            if(animatenow)
+            {
+                panel1.Show();
+                panel2.Show();
+                panel3.Show();
+                panel4.Show();
 
-            panel1.Show();
-            panel2.Show();
-            panel3.Show();
-            panel4.Show();
+                timer_animation.Start();
+                timer_STOPS.Start();
+            }
 
-            timer_animation.Start();
-            timer_STOPS.Start();
         }
 
         private void iosButtons_Click(object sender, EventArgs e)
@@ -143,7 +164,7 @@ namespace Calculator_dmg_exe
         int i = 200;
         private void timer_animation_Tick(object sender, EventArgs e)
         {
-            i -= 22;
+            i -= 20;
             if (i < 30)
                 i = 200;
             lblTXT.BackColor = Color.FromArgb(i , i, i );
