@@ -487,14 +487,17 @@ namespace Calculator_dmg_exe
 
         private void timer_mini_Tick(object sender, EventArgs e)
         {
-            //original size small [241, 376]
-            Width -= 5;
-            Top += 10;
+            Top += 25;
         }
-        Point nod = new Point(0, 0);
+        
+        Point beforeMini = new Point(0, 0);
+        public void miniNOW()
+        {
+
+        }
         private void label_result_Click(object sender, EventArgs e)
         {
-            nod = (Location);
+            beforeMini = (Location);
             timer_mini.Start();
             timer_stops.Start();
         }
@@ -502,11 +505,8 @@ namespace Calculator_dmg_exe
         private void timer_stops_Tick(object sender, EventArgs e)
         {
             timer_mini.Stop();
-            //Hide();
-            Width = 241;
             WindowState = FormWindowState.Minimized;
-            Location = nod;
-            //Location= new Point(0, 0);
+            Location = beforeMini;
             timer_stops.Stop();
         }
 
