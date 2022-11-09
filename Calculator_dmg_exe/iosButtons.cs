@@ -129,6 +129,7 @@ namespace Calculator_dmg_exe
             panel2.Show();
             panel3.Show();
             panel4.Show();
+
             timer_animation.Start();
             timer1.Start();
         }
@@ -156,10 +157,10 @@ namespace Calculator_dmg_exe
 
         private void timer_animation_Tick(object sender, EventArgs e)
         {
-            panel1.Width  -= 5;
-            panel2.Width  -= 5;
-            panel3.Height -= 5;
-            panel4.Height -= 5;
+            panel1.Width  -= 2;
+            panel2.Width  -= 2;
+            panel3.Height -= 2;
+            panel4.Height -= 2;
         }
     }
 }
