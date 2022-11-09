@@ -144,6 +144,7 @@ namespace Calculator_dmg_exe
             OnMouseUp(e);
             if(animatenow)
             {
+                lblTXT.Font = new System.Drawing.Font(lblTXT.Font.Name, lblTXT.Font.Size + 5);
                 panel1.Show();
                 panel2.Show();
                 panel3.Show();
@@ -190,6 +191,13 @@ namespace Calculator_dmg_exe
             panel4.Height = 10;
             i = 200;
             timer_STOPS.Stop();
+        }
+
+        private void lblTXT_MouseDown(object sender, MouseEventArgs e)
+        {
+            if(animatenow)
+            lblTXT.Font = new System.Drawing.Font(lblTXT.Font.Name, lblTXT.Font.Size-5);
+
         }
     }
 }
