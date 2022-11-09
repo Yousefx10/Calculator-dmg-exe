@@ -417,15 +417,16 @@ namespace Calculator_dmg_exe
                 if (i == 0)
                 {
                     btn_zero_MouseUp("btn_zero", null);
+                    btn_zero.anima(true);
                     return;
                 }
                 oka = new string[] { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" }[i - 1];
                 iosButtons ioo = ((iosButtons)flowLayoutPanel1.Controls.Find("btn_" + oka, false)[0]);
 
-
+                ioo.anima(true);
 
                 btn_one_MouseUp(ioo, null);
-
+                
                 //iosButtons ioo = ((iosButtons)flowLayoutPanel1.Controls.Find("btn_"+ oka, false)[0]);
                 // MessageBox.Show(oka);
 
@@ -434,6 +435,7 @@ namespace Calculator_dmg_exe
             else if (e.KeyChar == '.')
             {
                 btn_dot_MouseUp(null, null);
+                btn_dot.anima(true);
             }
             else
             {
@@ -452,10 +454,10 @@ namespace Calculator_dmg_exe
                     case '/':
                         btn_dividing_MouseUp(null, null);
                         break;
-                    case (char)13:
+                    case (char)13://equal button
                         btn_equal_MouseUp(null, null);
                         break;                    
-                    case (char)8:
+                    case (char)8://BACKSPACE button
                         if (theDOT == false && label_result.Text.Length > 1)
                         {
                                 label_result.Text = label_result.Text.Substring(0, (label_result.Text.Length - 1));

@@ -130,7 +130,18 @@ namespace Calculator_dmg_exe
             InitializeComponent();
         }
 
+        public void anima(bool isitBTN)
+        {
+            if(!isitBTN)
+            lblTXT.Font = new System.Drawing.Font(lblTXT.Font.Name, lblTXT.Font.Size + 5);
+            panel1.Show();
+            panel2.Show();
+            panel3.Show();
+            panel4.Show();
 
+            timer_animation.Start();
+            timer_STOPS.Start();
+        }
 
 
 
@@ -139,20 +150,14 @@ namespace Calculator_dmg_exe
             this.OnClick(e);
         }
 
+
+
+
         private void lblTXT_MouseUp(object sender, MouseEventArgs e)
         {
             OnMouseUp(e);
-            if(animatenow)
-            {
-                lblTXT.Font = new System.Drawing.Font(lblTXT.Font.Name, lblTXT.Font.Size + 5);
-                panel1.Show();
-                panel2.Show();
-                panel3.Show();
-                panel4.Show();
-
-                timer_animation.Start();
-                timer_STOPS.Start();
-            }
+            if (animatenow)
+                anima(false);
 
         }
 
