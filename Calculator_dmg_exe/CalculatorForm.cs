@@ -485,6 +485,27 @@ namespace Calculator_dmg_exe
             }
         }
 
+        private void timer_mini_Tick(object sender, EventArgs e)
+        {
+            //original size small [241, 376]
+            Width -= 5;
+            Top += 10;
+        }
+
+        private void label_result_Click(object sender, EventArgs e)
+        {
+            timer_mini.Start();
+            //timer_stops.Start();
+        }
+
+        private void timer_stops_Tick(object sender, EventArgs e)
+        {
+            timer_mini.Stop();
+            WindowState = FormWindowState.Minimized;
+            Location= new Point(0, 0);
+            timer_stops.Stop();
+        }
+
 
 
         //if (nn)
