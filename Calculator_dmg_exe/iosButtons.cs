@@ -125,11 +125,41 @@ namespace Calculator_dmg_exe
         {
             OnMouseUp(e);
 
+            panel1.Show();
+            panel2.Show();
+            panel3.Show();
+            panel4.Show();
+            timer_animation.Start();
+            timer1.Start();
         }
 
         private void iosButtons_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("hey from btn");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer_animation.Stop();
+            panel1.Hide();
+            panel2.Hide();
+            panel3.Hide();
+            panel4.Hide();
+
+            panel1.Width = 10;
+            panel2.Width = 10;
+            panel3.Height = 10;
+            panel4.Height = 10;
+
+            timer1.Stop();
+        }
+
+        private void timer_animation_Tick(object sender, EventArgs e)
+        {
+            panel1.Width  -= 5;
+            panel2.Width  -= 5;
+            panel3.Height -= 5;
+            panel4.Height -= 5;
         }
     }
 }

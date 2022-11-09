@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblTXT = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer_animation = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lblTXT
@@ -51,35 +54,53 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(10, 62);
             this.panel1.TabIndex = 1;
+            this.panel1.Visible = false;
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(52, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 62);
             this.panel2.TabIndex = 2;
+            this.panel2.Visible = false;
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(10, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(42, 10);
             this.panel3.TabIndex = 3;
+            this.panel3.Visible = false;
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(10, 52);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(42, 10);
             this.panel4.TabIndex = 4;
+            this.panel4.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer_animation
+            // 
+            this.timer_animation.Interval = 40;
+            this.timer_animation.Tick += new System.EventHandler(this.timer_animation_Tick);
             // 
             // iosButtons
             // 
@@ -104,5 +125,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer_animation;
     }
 }
