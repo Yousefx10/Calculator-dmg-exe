@@ -38,7 +38,22 @@ namespace Calculator_dmg_exe
 
 
 
-        bool ismax=false;
+
+        //shadow part :
+        private const int CS_DROPSHADOW = 0x20000;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ClassStyle |= CS_DROPSHADOW;
+                return cp;
+            }
+        }
+
+
+
+        bool ismax =false;
          public void bigSize()
         {
             if(!ismax)
