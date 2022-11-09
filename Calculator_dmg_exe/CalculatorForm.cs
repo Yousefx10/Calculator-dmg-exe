@@ -33,7 +33,6 @@ namespace Calculator_dmg_exe
             InitializeComponent();
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
             SetStyle(ControlStyles.StandardDoubleClick, false);
-
         }
 
 
