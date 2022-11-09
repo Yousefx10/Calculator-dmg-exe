@@ -34,7 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer_STOPS = new System.Windows.Forms.Timer(this.components);
             this.timer_animation = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -92,10 +92,10 @@
             this.panel4.TabIndex = 4;
             this.panel4.Visible = false;
             // 
-            // timer1
+            // timer_STOPS
             // 
-            this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer_STOPS.Interval = 200;
+            this.timer_STOPS.Tick += new System.EventHandler(this.timer_STOPS_Tick);
             // 
             // timer_animation
             // 
@@ -125,7 +125,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer_STOPS;
         private System.Windows.Forms.Timer timer_animation;
     }
 }

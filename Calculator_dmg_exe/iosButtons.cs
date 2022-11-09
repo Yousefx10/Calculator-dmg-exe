@@ -131,7 +131,7 @@ namespace Calculator_dmg_exe
             panel4.Show();
 
             timer_animation.Start();
-            timer1.Start();
+            timer_STOPS.Start();
         }
 
         private void iosButtons_Click(object sender, EventArgs e)
@@ -139,28 +139,36 @@ namespace Calculator_dmg_exe
             //MessageBox.Show("hey from btn");
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+
+        int i = 200;
+        private void timer_animation_Tick(object sender, EventArgs e)
+        {
+            i -= 22;
+            if (i < 30)
+                i = 200;
+            lblTXT.BackColor = Color.FromArgb(i , i, i );
+
+
+            panel1.Width  -= 2;
+            panel2.Width  -= 2;
+            panel3.Height -= 2;
+            panel4.Height -= 2;
+        }
+
+        private void timer_STOPS_Tick(object sender, EventArgs e)
         {
             timer_animation.Stop();
             panel1.Hide();
             panel2.Hide();
             panel3.Hide();
             panel4.Hide();
-
+            lblTXT.BackColor = BackColor;
             panel1.Width = 10;
             panel2.Width = 10;
             panel3.Height = 10;
             panel4.Height = 10;
-
-            timer1.Stop();
-        }
-
-        private void timer_animation_Tick(object sender, EventArgs e)
-        {
-            panel1.Width  -= 2;
-            panel2.Width  -= 2;
-            panel3.Height -= 2;
-            panel4.Height -= 2;
+            i = 200;
+            timer_STOPS.Stop();
         }
     }
 }
